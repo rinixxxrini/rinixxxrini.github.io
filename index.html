@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261019">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261025">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261019">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261025">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -510,6 +510,11 @@ const SP_NIGHT = ["img/sp_guides/night1-386ec85f.jpg", "img/sp_guides/night2-666
 const SP_GUIDES = [{"title": "행사 포스터", "img": "img/sp_guides/poster-1d4e72ef.jpg"}, {"title": "MD LIST 1", "img": "img/sp_guides/md1-47bc2a14.jpg"}, {"title": "MD LIST 2", "img": "img/sp_guides/md2-556a9eba.jpg"}, {"title": "MD LIST 3", "img": "img/sp_guides/md3-e0e063b6.jpg"}, {"title": "MD LIST 4", "img": "img/sp_guides/md4-7a13ec54.jpg"}, {"title": "MD 특전", "img": "img/sp_guides/gift-50a7914e.jpg"}, {"title": "주간 메뉴 1", "img": "img/sp_guides/day1-bb3882e9.jpg"}, {"title": "주간 메뉴 2 · 코스터", "img": "img/sp_guides/day2-fdd31fab.jpg"}, {"title": "야간 메뉴 1 (애들은 재우고)", "img": "img/sp_guides/night1-386ec85f.jpg"}, {"title": "야간 메뉴 2 · 코스터", "img": "img/sp_guides/night2-6666996c.jpg"}, {"title": "스탬프 미션", "img": "img/sp_guides/stamp-86fe5d4a.jpg"}, {"title": "예약자 포토카드", "img": "img/sp_guides/rsv-07f70e1e.jpg"}, {"title": "콜라보카페 예약 안내", "img": "img/sp_guides/time-cbd2aead.jpg"}, {"title": "재입고 안내 (9/29)", "img": "img/sp_guides/restock-8083be38.jpg"}];
 const SH_BOARD = "img/sh_guides/menu-3b124259.jpg";
 const SH_GUIDES = [{"title": "메뉴", "img": "img/sh_guides/menu-3b124259.jpg"}, {"title": "상품 안내", "img": "img/sh_guides/md-3732ca63.jpg"}, {"title": "증정품 안내", "img": "img/sh_guides/gift-0aaa910a.jpg"}, {"title": "포토카드 증정 이벤트", "img": "img/sh_guides/event-f15164d5.jpg"}, {"title": "이벤트 정보 · 예약 안내", "img": "img/sh_guides/info-d98f712f.jpg"}, {"title": "포스터", "img": "img/sh_guides/poster-ebf1b424.jpg"}];
+const GS_IMGS = {"1": "img/gs_imgs/1-ca8ce377.jpg", "2": "img/gs_imgs/2-7cf1f05d.jpg", "3": "img/gs_imgs/3-4193b8e1.jpg", "4": "img/gs_imgs/4-a90c3416.jpg", "5": "img/gs_imgs/5-d279f398.jpg", "6": "img/gs_imgs/6-271385a7.jpg", "7": "img/gs_imgs/7-e7d6ea8e.jpg", "8": "img/gs_imgs/8-8aa60f2b.jpg", "9": "img/gs_imgs/9-58a29f79.jpg", "10": "img/gs_imgs/10-3b9bc6cf.jpg", "11": "img/gs_imgs/11-280f8db7.jpg", "12": "img/gs_imgs/12-bfb79058.jpg", "21": "img/gs_imgs/21-c886332e.jpg", "22": "img/gs_imgs/22-27377481.jpg", "23": "img/gs_imgs/23-2eedf9d4.jpg", "24": "img/gs_imgs/24-3c7c0613.jpg", "25": "img/gs_imgs/25-8671ca31.jpg", "26": "img/gs_imgs/26-e889f7cb.jpg", "27": "img/gs_imgs/27-65e023b3.jpg", "28": "img/gs_imgs/28-b0174f2d.jpg", "29": "img/gs_imgs/29-46b234b9.jpg", "30": "img/gs_imgs/30-3b1843a3.jpg", "31": "img/gs_imgs/31-a3a0d323.jpg", "32": "img/gs_imgs/32-ba00c18f.jpg", "33": "img/gs_imgs/33-310e73b3.jpg", "34": "img/gs_imgs/34-bb17a9a8.jpg", "35": "img/gs_imgs/35-af670b80.jpg", "36": "img/gs_imgs/36-6ce241d3.jpg"};
+const GS_GIMG = {"set1": "img/gs_gimg/set1-9b4074e0.jpg", "set2": "img/gs_gimg/set2-668df61a.jpg", "coaster": "img/gs_gimg/coaster-c574d7ac.jpg", "set3": "img/gs_gimg/set3-148f6aae.jpg", "pc": "img/gs_gimg/pc-84044ad5.jpg"};
+const GS_COVER = "img/gs_cover/cover-dd285df2.jpg";
+const GS_BOARD = "img/gs_guides/menu-d8d5b449.jpg";
+const GS_GUIDES = [{"title": "메뉴", "img": "img/gs_guides/menu-d8d5b449.jpg"}, {"title": "굿즈 1", "img": "img/gs_guides/md1-2fc045d3.jpg"}, {"title": "굿즈 2", "img": "img/gs_guides/md2-1bca5882.jpg"}, {"title": "특전", "img": "img/gs_guides/gift-2273806c.jpg"}, {"title": "SNS 이벤트", "img": "img/gs_guides/sns-721257ff.jpg"}, {"title": "메인 이미지", "img": "img/gs_guides/kv-d8dbf802.jpg"}];
 const AF_IMGS = {"1": "img/af_imgs/1-0dc99863.jpg", "2": "img/af_imgs/2-ac82d81b.jpg", "3": "img/af_imgs/3-60dbe280.jpg", "4": "img/af_imgs/4-53efc25b.jpg", "5": "img/af_imgs/5-baaec011.jpg", "6": "img/af_imgs/6-15875eec.jpg", "7": "img/af_imgs/7-71947cc3.jpg", "11": "img/af_imgs/11-db0d788a.jpg", "12": "img/af_imgs/12-154393e6.jpg", "13": "img/af_imgs/13-154393e6.jpg", "14": "img/af_imgs/14-82bbfd83.jpg", "15": "img/af_imgs/15-50b5cd99.jpg", "16": "img/af_imgs/16-4e2317c7.jpg", "17": "img/af_imgs/17-3fbd7175.jpg", "18": "img/af_imgs/18-cc19f1db.jpg", "19": "img/af_imgs/19-691f5c98.jpg", "20": "img/af_imgs/20-5752227f.jpg"};
 const AF_GIMG = {"coaster": "img/af_gimg/coaster-25b875c6.jpg", "postcard": "img/af_gimg/postcard-53a23d26.jpg", "poster": "img/af_gimg/poster-dd43fb51.jpg", "mini": "img/af_gimg/mini-6dbfbc4e.jpg"};
 const AF_COVER = "img/af_cover/cover-3d9eae89.jpg";
@@ -802,6 +807,37 @@ const AF_ITEMS = [
   {no:19,tag:"08",cat:"상품",name:"콜렉트 바인더 1종 + 일러스트 엽서 2종",sub:"표지 265×315mm, 속지 A4 · 속지: 색지용/엽서용/포스터용/코스터용/미니 포토카드용 각 3매씩 15매",price:25000,limit:5},
   {no:20,tag:"09",cat:"상품",name:"The S세트 (리뉴얼)",sub:"엽서 10종 + 렌티큘러 엽서 2종 + 3D 렌티큘러 엽서 2종",price:26000,limit:5,note:"19세 미만 구매 불가 · 결제 시 신분증 확인"},
 ];
+const GS_CATS = ["카페 메뉴","아크릴","지류·스티커","잡화"];
+const GS_ITEMS = [
+  {no:1,tag:"D1",cat:"카페 메뉴",name:"비온 스페셜티",sub:"티 6종 중 선택",price:6000,vars:["수국유자차","스위트 라벤더","캐모마일","히비스커스 블라썸","페퍼민트","마리골드 블라썸"],noElig:true},
+  {no:2,tag:"D2",cat:"카페 메뉴",name:"아메리카노",price:6000,noElig:true},
+  {no:3,tag:"D3",cat:"카페 메뉴",name:"다크초코프라페",price:7000,noElig:true},
+  {no:4,tag:"D4",cat:"카페 메뉴",name:"딸기라떼",price:7000,noElig:true},
+  {no:5,tag:"D5",cat:"카페 메뉴",name:"망고주스",price:7000,noElig:true},
+  {no:6,tag:"D6",cat:"카페 메뉴",name:"카페라떼",price:7000,noElig:true},
+  {no:7,tag:"D7",cat:"카페 메뉴",name:"초코라떼",price:7000,noElig:true},
+  {no:8,tag:"D8",cat:"카페 메뉴",name:"오렌지소다",price:7000,noElig:true},
+  {no:9,tag:"S1",cat:"카페 메뉴",name:"상견례 도넛",sub:"디저트",price:8000,noElig:true},
+  {no:10,tag:"S2",cat:"카페 메뉴",name:"갸토쇼콜라 케이크",sub:"디저트",price:8000,noElig:true},
+  {no:11,tag:"S3",cat:"카페 메뉴",name:"딸기+쿠키앤크림 쫀득쿠키",sub:"디저트",price:8000,noElig:true},
+  {no:12,tag:"S4",cat:"카페 메뉴",name:"칠리 핫도그",sub:"디저트",price:9000,noElig:true},
+  {no:21,cat:"아크릴",name:"아크릴 스탠드",price:29000},
+  {no:22,cat:"아크릴",name:"아크릴 포토카드 홀더",price:17000},
+  {no:23,cat:"아크릴",name:"아크릴 카라비너",price:13000},
+  {no:24,cat:"잡화",name:"슬로건타올",price:15000},
+  {no:25,cat:"아크릴",name:"아크릴 키링",price:9000,vars:["천문학","이재희"]},
+  {no:26,cat:"잡화",name:"마스킹테이프 세트",sub:"디스펜서 + 마스킹테이프 2입",price:38000},
+  {no:27,cat:"잡화",name:"하이볼잔",price:17000},
+  {no:28,cat:"잡화",name:"피어싱",price:13000},
+  {no:29,cat:"아크릴",name:"아크릴 코롯토",price:12000},
+  {no:30,cat:"잡화",name:"캔뱃지 세트",price:9000},
+  {no:31,cat:"잡화",name:"사인 기타 피크",sub:"랜덤",price:3000},
+  {no:32,cat:"지류·스티커",name:"로고 스티커팩",price:15000},
+  {no:33,cat:"지류·스티커",name:"판스티커 세트",price:15000},
+  {no:34,cat:"지류·스티커",name:"포토카드",sub:"랜덤",price:4500},
+  {no:35,cat:"지류·스티커",name:"바인더북",price:24000},
+  {no:36,cat:"지류·스티커",name:"필름 세트",price:6000},
+];
 const SH_CATS = ["카페 메뉴","상품"];
 const SH_ITEMS = [
   {no:1,tag:"M1",cat:"카페 메뉴",name:"<천희건> 바닐라크림 콜드브루",sub:"네가 싫다는 건 아무 것도 안 해.",price:7000,noElig:true},
@@ -885,6 +921,50 @@ const SG_ITEMS = [
   {no:16,cat:"키링·인형",name:"꼬치 인형 키링 (2종)",sub:"꼬치 인형 + 포토카드",price:27000,vars:["지우&동찬","선의&철호"],note:"팝업샵 2주차 입고 예정 · 정확한 입고 일정은 추후 모펀 스토어 아이파크몰 용산점 X 계정으로 안내"},
 ];
 const EVENTS = [{
+  id:"gs",
+  work:"그루피 스위티",
+  kw:"그루피 스위티 그루피스위티 그스 groupie sweetie 비온 아넥스 비온아넥스 비온카페 be on annex beon 천문학 이재희 써머",
+  title:"GROUPIE SWEETIE × Be On ANNEX",
+  cardSub:"비온 아넥스 (마포구 동교로25길)",
+  sub:"비온 아넥스",
+  subFull:"그루피 스위티 × 비온 아넥스 콜라보 카페 계산기",
+  dates:"2026.10.31(토) - 2026.11.15(일)",
+  imgs:GS_IMGS, gimg:GS_GIMG,
+  menuBoard:GS_BOARD, menuCat:"카페 메뉴",
+  cover:GS_COVER,
+  hasLd:false,
+  catLabel:"구분",
+  cats:GS_CATS,
+  items:GS_ITEMS,
+  giftTitle:"굿즈 특전",
+  cafeGiftTitle:"메뉴 특전",
+  cartHint:"장바구니 1개 = 결제(영수증) 1건으로 계산했어요. 굿즈 특전은 굿즈 금액 기준이에요. 구매 제한은 현장 상황에 따라 생길 수 있어요.",
+  gifts:[
+    {id:"set1",short:"엽서+스티커",name:"일러스트 엽서 5종 / 도무송 스티커 10종",cond:"굿즈 1만원 이상 구매 시 랜덤 1세트",img:"set1",rule:{type:"min",amount:10000},unit:"세트"},
+    {id:"set2",short:"포스터+팔찌",name:"포스터 3종 / 공연 팔찌 3종",cond:"굿즈 5만원 이상 구매 시 랜덤 1세트",img:"set2",rule:{type:"min",amount:50000},unit:"세트"},
+    {id:"coaster",cafe:true,short:"사각 코스터",name:"사각 코스터 (7종)",cond:"음료 혹은 디저트 구매 시 랜덤 1종 (메뉴 1개당 1장으로 계산)",img:"coaster",rule:{type:"items",nos:[1,2,3,4,5,6,7,8,9,10,11,12]},unit:"장"},
+    {id:"set3",cafe:true,short:"포스터+캔뱃지",name:"일러스트 포스터 4종 / 캔뱃지 4종",cond:"음료+디저트 세트 구매 시 랜덤 1세트 (음료 1개 + 디저트 1개마다 1세트로 계산)",img:"set3",rule:{type:"pairs",a:[1,2,3,4,5,6,7,8],b:[9,10,11,12]},unit:"세트"},
+  ],
+  notes:[
+    "장소는 비온 아넥스(Be On ANNEX)예요. 포스터에 적힌 주소는 서울 마포구 동교로25길 34예요. 운영 소식은 트위터 @cafebeon, 인스타그램 @beoncafe.official에서 확인할 수 있어요.",
+    "굿즈 특전: 1만원 이상이면 일러스트 엽서/도무송 스티커 랜덤 1세트, 5만원 이상이면 포스터/공연 팔찌 랜덤 1세트예요. 결제 1건 기준으로 계산했어요.",
+    "메뉴 특전: 음료나 디저트를 사면 사각 코스터 랜덤 1종, 음료+디저트 세트로 사면 일러스트 포스터/캔뱃지 랜덤 1세트예요. 메뉴 1개당 코스터 1장, 음료 1개+디저트 1개마다 세트 1개로 계산했어요. 현장 기준과 다르면 알려 주세요.",
+    "모든 제품은 재고가 소진되면 판매가 끝나요. 현장 상황에 따라 구매 제한이 생길 수 있어요.",
+    "제품 이미지는 실물과 다를 수 있어요. 인쇄 과정에서 생긴 미세한 흠집이나 점은 교환·환불 대상이 아니에요."
+  ],
+  complete:{
+    title:"SNS 이벤트 · 포토카드 10종",
+    sub:"받았으면 체크",
+    items:[
+      {k:"e1",img:"pc",name:"굿즈 구매 인증 게시글 업로드 · 포토카드 +1종",cond:"필수 해시태그와 함께 굿즈 구매 인증 게시글 업로드"},
+      {k:"e2",img:"pc",name:"이벤트 메뉴 구매 인증 게시글 업로드 · 포토카드 +1종",cond:"필수 해시태그와 함께 이벤트 메뉴 구매 인증 게시글 업로드"},
+      {k:"e3",img:"pc",name:"작품 소장 인증 · 포토카드 +1종",cond:"작품 소장 인증"}
+    ],
+    collect:{n:10,title:"포토카드 도감"},
+    note:"필수 해시태그: #써머 #beyond #해담이엔티 #비온아넥스 #비온카페 #인증이벤트 · 비온아넥스 계정 팔로우 확인 후 증정 (트위터 @cafebeon · 인스타그램 @beoncafe.official)"
+  },
+  guides:GS_GUIDES
+},{
   id:"af",
   work:"알로샤의 꽃",
   kw:"알로샤의 꽃 알로샤의꽃 알꽃 The Search For Alosha 지그릴 케이 모펀 mofun 홍대 AK",
@@ -1564,7 +1644,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
@@ -1660,6 +1740,7 @@ function giftCount(r, elig, byNo){
   if(t.type==="per") return Math.min(t.cap||Infinity, Math.floor(elig/t.amount));
   if(t.type==="item") return byNo[t.no]||0;
   if(t.type==="items") return Math.floor(t.nos.reduce((a,n)=>a+(byNo[n]||0),0)/(t.div||1)) * (t.mult||1);
+  if(t.type==="pairs") return Math.min(t.a.reduce((x,n)=>x+(byNo[n]||0),0), t.b.reduce((x,n)=>x+(byNo[n]||0),0));
   if(t.type==="parts") return t.parts.reduce((a,pt)=>a+Math.floor(pt.nos.reduce((x,n)=>x+(byNo[n]||0),0)/(pt.div||1))*(pt.mult||1),0);
   return 0;
 }
@@ -2510,10 +2591,10 @@ function renderHome(){
     const st = evStatus(dates), r = dateRange(dates) || {start:0,end:0};
     return {title,work,sub,dates,cover,count,n,sum,ld,pend,target,kw:normQ([work,title,sub,dates,kw].join(" ")),status:st,start:r.start,end:r.end,ended:st==="ended"};
   });
-  // 운영 중 → 운영 예정(시작 빠른 순) → 운영 종료(최근에 끝난 순, 먼저 끝난 행사가 맨 뒤)
+  // 운영 중(오픈일 빠른 순) → 운영 예정(오픈일 빠른 순) → 운영 종료(최근에 끝난 순, 먼저 끝난 행사가 맨 뒤)
   const rank = {live:0, soon:1, ended:2};
   cards.forEach((c,i)=>c.i=i);
-  cards.sort((x,y)=> rank[x.status]-rank[y.status] || (x.status==="soon" ? x.start-y.start : x.status==="ended" ? y.end-x.end : x.i-y.i));
+  cards.sort((x,y)=> rank[x.status]-rank[y.status] || (x.status==="ended" ? y.end-x.end : x.start-y.start) || x.i-y.i);
   const q = normQ(homeQ), qc = q.replace(/ /g,"");
   const hit = c => !q || q.split(" ").every(w=>c.kw.includes(w)) || c.kw.replace(/ /g,"").includes(qc);
   const found = cards.filter(hit);
