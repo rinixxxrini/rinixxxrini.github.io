@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261025">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261027">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261025">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261027">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -876,6 +876,34 @@ const WS_ITEMS = [
   {no:19,tag:"08",cat:"상품",name:"콜렉트 바인더 1종 + A4 포스터 1종",sub:"표지 265×315mm, 속지 A4 · 속지: 색지용/엽서용/포스터용/코스터용/미니 포토카드용 각 3매씩 15매",price:25000},
   {no:20,tag:"09",cat:"상품",name:"The S세트 (리뉴얼)",sub:"엽서 10종 + 렌티큘러 엽서 2종 + 3D 렌티큘러 엽서 2종",price:26000,note:"19세 미만 구매 불가 · 결제 시 신분증 확인"},
 ];
+const SS_IMGS = {"1": "img/ss_imgs/1-59cce83e.jpg", "2": "img/ss_imgs/2-9aba2032.jpg", "3": "img/ss_imgs/3-bcfadcc4.jpg", "4": "img/ss_imgs/4-0afd920f.jpg", "5": "img/ss_imgs/5-e586728d.jpg", "6": "img/ss_imgs/6-835cab16.jpg", "7": "img/ss_imgs/7-e24e8e7e.jpg", "11": "img/ss_imgs/11-1651b670.jpg", "12": "img/ss_imgs/12-0fa0dcc1.jpg", "13": "img/ss_imgs/13-19b82807.jpg", "14": "img/ss_imgs/14-da30c936.jpg", "15": "img/ss_imgs/15-11a86fe5.jpg", "16": "img/ss_imgs/16-50c8a0e8.jpg", "17": "img/ss_imgs/17-3210d151.jpg", "18": "img/ss_imgs/18-545e0119.jpg", "19": "img/ss_imgs/19-87c1b99d.jpg", "20": "img/ss_imgs/20-0583c6e3.jpg", "21": "img/ss_imgs/21-9c231249.jpg", "22": "img/ss_imgs/22-943e6d65.jpg", "23": "img/ss_imgs/23-00a07d57.jpg"};
+const SS_GIMG = {"coaster": "img/ss_gimg/coaster-3a5f643c.jpg", "stamp": "img/ss_gimg/stamp-3fd74f4e.jpg", "seal": "img/ss_gimg/seal-5a055d1b.jpg", "pc": "img/ss_gimg/pc-a2d7374e.jpg", "postcard": "img/ss_gimg/postcard-ba976eb1.jpg", "set": "img/ss_gimg/set-31d79178.jpg"};
+const SS_GUIDES = [{"title": "일정 · 예약 · 공지", "img": "img/ss_guides/info-6bf53d35.jpg"}, {"title": "콜라보 메뉴", "img": "img/ss_guides/menu-3dd7eded.jpg"}, {"title": "MD 1", "img": "img/ss_guides/md1-07a02976.jpg"}, {"title": "MD 2", "img": "img/ss_guides/md2-99d2dcd7.jpg"}, {"title": "메뉴 스탬프 · 해시태그 이벤트", "img": "img/ss_guides/ev-2f72cd3a.jpg"}, {"title": "증정품 (GIFT)", "img": "img/ss_guides/gift-d288154b.jpg"}, {"title": "럭키 드로우 이벤트", "img": "img/ss_guides/ld-2a13849e.jpg"}];
+const SS_COVER = "img/ss_cover/cover-74b847c7.jpg";
+const SS_BOARD = "img/ss_guides/menu-3dd7eded.jpg";
+const SS_CATS = ["카페 메뉴","MD","럭키드로우"];
+const SS_ITEMS = [
+  {no:1,tag:"M1",cat:"카페 메뉴",name:"조연오의 시나몬 라떼",price:7000,noElig:true},
+  {no:2,tag:"M2",cat:"카페 메뉴",name:"소기현의 블루 멜로우 티",price:6500,noElig:true},
+  {no:3,tag:"M3",cat:"카페 메뉴",name:"<솔트 소사이어티> 석류 히비스커스 에이드",price:7000,noElig:true},
+  {no:4,tag:"M4",cat:"카페 메뉴",name:"조연오의 말차 더블프로마쥬",price:8000,noElig:true},
+  {no:5,tag:"M5",cat:"카페 메뉴",name:"소기현의 잉글리시 머핀",price:8000,noElig:true},
+  {no:6,tag:"M6",cat:"카페 메뉴",name:"<솔트 소사이어티> 솔티드 카라멜 머핀",price:8000,noElig:true},
+  {no:7,tag:"M7",cat:"카페 메뉴",name:"일러스트 쿠키",sub:"2종 · 쿠키 2개 주문 시 코스터 1종 랜덤",price:4000,vars:["조연오","소기현"],noElig:true},
+  {no:11,tag:"01",cat:"MD",name:"아크릴 스탠드 (2종)",price:15000,vars:["조연오","소기현"],limit:5,perDesign:true},
+  {no:12,tag:"02",cat:"MD",name:"조연오 페로몬 SET",sub:"프래그런스 태그, 명함, 포토카드 2종",price:21000,limit:5},
+  {no:13,tag:"03",cat:"MD",name:"마스킹 테이프",price:7000,limit:5},
+  {no:14,tag:"04",cat:"MD",name:"SD 아크릴 키링 (2종)",price:7000,vars:["조연오","소기현"],limit:5,perDesign:true},
+  {no:15,tag:"05",cat:"MD",name:"워터 글리터",price:28000,limit:5},
+  {no:16,tag:"06",cat:"MD",name:"렌티큘러 포토카드 SET",price:10000,limit:5},
+  {no:17,tag:"07",cat:"MD",name:"데스크 시팅 아크릴 스탠드",price:25000,limit:5},
+  {no:18,tag:"08",cat:"MD",name:"DIY 일러스트 캔뱃지 (랜덤 1종)",sub:"구매 수량 제한 없음",price:7000},
+  {no:19,tag:"09",cat:"MD",name:"흔들 미니 아크릴 (2종)",price:10000,vars:["조연오","소기현"],limit:5,perDesign:true},
+  {no:20,tag:"10",cat:"MD",name:"바인더",price:23000,limit:5},
+  {no:21,tag:"11",cat:"MD",name:"소기현 인식표 SET",sub:"군번줄, 명함, 혈액 검사지, 군대 사진",price:21000,limit:5},
+  {no:22,tag:"12",cat:"MD",name:"일러스트 포토카드 (랜덤 2종)",sub:"구매 수량 제한 없음",price:3500},
+  {no:23,tag:"LD",cat:"럭키드로우",name:"럭키 드로우 · 랜덤 뽑기 1회",sub:"투명 포토카드 8종 중 랜덤 1종 · 카운터 결제 후 블라인드 박스로 직접 뽑기",price:2500,noBenefit:true,note:"MD·카페 이용 금액과 합산 불가 · 구매 수량 제한 없음"},
+];
 const MTG_CATS = ["카페 메뉴","MD","럭키드로우"];
 const MTG_MENU = [1,2,3,4,5,6,7];
 const MTG_BOARD = "img/mtg_board/board-44d705ae.jpg";
@@ -921,6 +949,67 @@ const SG_ITEMS = [
   {no:16,cat:"키링·인형",name:"꼬치 인형 키링 (2종)",sub:"꼬치 인형 + 포토카드",price:27000,vars:["지우&동찬","선의&철호"],note:"팝업샵 2주차 입고 예정 · 정확한 입고 일정은 추후 모펀 스토어 아이파크몰 용산점 X 계정으로 안내"},
 ];
 const EVENTS = [{
+  id:"ss",
+  work:"솔트 소사이어티",
+  kw:"솔트 소사이어티 솔소사 솔트소사이어티 salt society 조연오 소기현 투니크 toonique 홍대",
+  rsv:true,
+  title:"Salt Society × Toonique",
+  cardSub:"카페 투니크 홍대점",
+  sub:"카페 투니크 홍대점",
+  subFull:"솔트 소사이어티 × 투니크 콜라보 카페(홍대점) 계산기",
+  dates:"2026.11.4(수) - 2026.11.22(일)",
+  imgs:SS_IMGS, gimg:SS_GIMG,
+  menuBoard:SS_BOARD, menuCat:"카페 메뉴",
+  cover:SS_COVER,
+  hasLd:true,
+  catLabel:"구분",
+  cats:SS_CATS,
+  items:SS_ITEMS,
+  giftTitle:"증정품",
+  cartHint:"장바구니 1개 = 영수증 1건이에요. 1만원 엽서는 영수증 1건 기준이고, 5만원 SET은 당일 결제 영수증을 합쳐서 받아요. MD는 품목별 최대 5개예요.",
+  multiNote:"5만원 SET은 당일 영수증을 합산해서 받을 수 있고, 1만원 엽서는 영수증 1건 기준이에요. 콜라보 메뉴 금액은 합산에서 제외돼요.",
+  gifts:[
+    {id:"coaster",cafe:true,short:"코스터",name:"코스터 (8종)",cond:"콜라보 메뉴 단품 1개당 1종 랜덤 · 쿠키는 2개 주문 시 1종",img:"coaster",rule:{type:"parts",parts:[{nos:[1,2,3,4,5,6]},{nos:[7],div:2}]},unit:"매"},
+    {id:"stamp",cafe:true,short:"스탬프",name:"메뉴 스탬프",cond:"콜라보 메뉴 1개당 1개로 계산 · 실제 구매 시점에만 적립",img:"stamp",rule:{type:"items",nos:[1,2,3,4,5,6,7]},unit:"개"},
+    {id:"seal",cafe:true,short:"띠부띠부씰",name:"띠부띠부씰 3종 SET",cond:"스탬프 6개 적립 시 1세트 증정",img:"seal",rule:{type:"items",nos:[1,2,3,4,5,6,7],div:6},unit:"세트"},
+    {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (16종)",cond:"콜라보 MD 1만원 당 1종 랜덤 · 영수증 합산 불가(영수증 1건 기준)",img:"postcard",rule:{type:"per",amount:10000},unit:"종"},
+    {id:"set",short:"엽서+홀로그램 SET",name:"엽서 + 홀로그램 포토카드 SET (2종)",cond:"콜라보 MD 5만원 당 1세트 랜덤 · 당일 결제 영수증은 합산 가능",img:"set",rule:{type:"per",amount:50000},unit:"세트",combine:true},
+  ],
+  notes:[
+    "금액 특전(엽서·SET)은 ‘콜라보 MD’ 구매 금액 기준이고 콜라보 메뉴 금액은 합산에서 제외돼요. 럭키 드로우도 합산하지 않고 계산했어요.",
+    "영수증 합산은 당일 결제 건에 한해서만 가능해요. 단, 1만원 특전은 해당되지 않아요.",
+    "금액 특전은 소진되면 조기 종료돼요. 코스터와 데코픽도 소진되면 증정이 끝나요.",
+    "코스터는 콜라보 메뉴 단품 또는 쿠키 2개를 주문하면 1종 랜덤으로 줘요.",
+    "메뉴 스탬프 6개를 모으면 띠부띠부씰 3종 SET을 줘요. 영수증이나 메뉴 쿠폰으로는 적립이 어렵고 실제 구매 시점에만 적립돼요. 스탬프 카드는 합산이나 재발급이 안 돼요.",
+    "카페 테이블 이용 시 1인 1메뉴 주문이 필수예요. 모든 메뉴는 현장 상황에 따라 일시 소진될 수 있어요.",
+    "MD 최대 구매 수량은 품목별 5개예요. 일러스트 포토카드, DIY 일러스트 캔뱃지, 럭키 드로우는 제한이 없어요. 대량 구매는 온라인 예약 구매를 이용하세요. (온라인 예약 오픈 11/4)",
+    "럭키 드로우(1회 2,500원, 11/4~11/22)는 카운터에서 결제 후 블라인드 박스로 직접 뽑아요. 콜라보 카페 이용 금액과 합산할 수 없어요.",
+    "운영 시간은 오전 11시~오후 9시이고 타임별 라스트 오더는 마감 15분 전이에요. 위치는 서울 마포구 동교동 147-34 카페 투니크 홍대점이에요.",
+    "네이버 사전 예약은 10/29(목) 오후 6시 오픈이에요. 1회 예약에 본인 포함 최대 2인, 예약금 3,000원(카페 방문 시 환불), 이용 시간 105분이고 당일 예약·취소는 안 돼요. 해당 시간에 방문하지 않으면 예약금은 환불되지 않아요.",
+    "예약 가능 타임: 11:00-12:45 / 13:00-14:45 / 15:00-16:45 / 17:00-18:45 / 19:00-20:45. 본인 확인을 위해 예약자 성함과 핸드폰 번호 뒷자리가 필요해요.",
+    "11/4(수)~11/6(금)에는 네이버 사전 예약자만 카페 이용과 상품 구매를 할 수 있어요. 11/7(토)부터는 비예약자도 식음료 테이크아웃과 상품 구매가 가능하지만 메뉴·MD 결제는 예약자가 우선이에요.",
+    "카페 내부 좌석은 예약자 우선이고(1·2층 동일), 2층 야외 좌석은 비예약자도 쓸 수 있어요. 11/7(토)부터 예약 없이 가도 MD 결제와 메뉴 테이크아웃은 가능해요. (테이블·좌석 이용 시 1인 1메뉴 필수)",
+    "결제는 예약자 우선이고, 비예약자는 각 타임 오픈 30분 이후부터 결제할 수 있어요. 현장 상황에 따라 달라질 수 있어요."
+  ],
+  complete:{
+    title:"해시태그 이벤트 (일러스트 포토카드 9종)",
+    tab:"해시태그 이벤트",
+    sub:"1일 1인 1회 수령 · 하루 최대 3장 · 체크는 자정이 지나면 풀려요",
+    items:[
+      {k:"h1",daily:true,img:"pc",name:"① 웹툰 공식 플랫폼 전체 회차 소장 인증 (+1장)",cond:"<솔트 소사이어티> 웹툰 공식 플랫폼에서 전체 회차 소장 인증 · 스크린샷으로는 참여할 수 없어요"},
+      {k:"h2",daily:true,img:"pc",name:"② MD 구매 인증 게시글 (+1장)",cond:"<솔트 소사이어티> MD 구매 인증 게시글을 필수 해시태그와 함께 작성"},
+      {k:"h3",daily:true,img:"pc",name:"③ 메뉴 구매 인증 게시글 (+1장)",cond:"<솔트 소사이어티> 메뉴 구매 인증 게시글을 필수 해시태그와 함께 작성"}
+    ],
+    collect:{n:9,title:"일러스트 포토카드 도감"},
+    note:"카운터에서 당일 게시글을 보여주면 포토카드를 랜덤으로 줘요. 필수 해시태그: #솔트소사이어티 #솔소사 #콜라보카페 #아르곤18 #제스 #연밥 #호라이즌 #투니크",
+    notes:[
+      "당일 인증이 끝난 영수증은 같은 날 다시 쓸 수 없고, 재발행한 영수증으로는 어떤 경우에도 참여할 수 없어요.",
+      "작품 소장 인증은 스크린샷으로 참여할 수 없어요.",
+      "이 이벤트는 증정품이 소진되면 조기 종료돼요."
+    ]
+  },
+  guides:SS_GUIDES
+},{
   id:"gs",
   work:"그루피 스위티",
   kw:"그루피 스위티 그루피스위티 그스 groupie sweetie 비온 아넥스 비온아넥스 비온카페 be on annex beon 천문학 이재희 써머",
@@ -1644,7 +1733,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
