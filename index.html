@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261027">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261102">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261027">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261102">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -876,6 +876,8 @@ const WS_ITEMS = [
   {no:19,tag:"08",cat:"상품",name:"콜렉트 바인더 1종 + A4 포스터 1종",sub:"표지 265×315mm, 속지 A4 · 속지: 색지용/엽서용/포스터용/코스터용/미니 포토카드용 각 3매씩 15매",price:25000},
   {no:20,tag:"09",cat:"상품",name:"The S세트 (리뉴얼)",sub:"엽서 10종 + 렌티큘러 엽서 2종 + 3D 렌티큘러 엽서 2종",price:26000,note:"19세 미만 구매 불가 · 결제 시 신분증 확인"},
 ];
+const PZ_COVER = "img/pz_cover/cover-e719bbf9.jpg";
+const PZ_GUIDES = [{"title": "메인 이미지 · 일정", "img": "img/pz_guides/kv-69a25bd3.jpg"}];
 const SS_IMGS = {"1": "img/ss_imgs/1-59cce83e.jpg", "2": "img/ss_imgs/2-9aba2032.jpg", "3": "img/ss_imgs/3-bcfadcc4.jpg", "4": "img/ss_imgs/4-0afd920f.jpg", "5": "img/ss_imgs/5-e586728d.jpg", "6": "img/ss_imgs/6-835cab16.jpg", "7": "img/ss_imgs/7-e24e8e7e.jpg", "11": "img/ss_imgs/11-1651b670.jpg", "12": "img/ss_imgs/12-0fa0dcc1.jpg", "13": "img/ss_imgs/13-19b82807.jpg", "14": "img/ss_imgs/14-da30c936.jpg", "15": "img/ss_imgs/15-11a86fe5.jpg", "16": "img/ss_imgs/16-50c8a0e8.jpg", "17": "img/ss_imgs/17-3210d151.jpg", "18": "img/ss_imgs/18-545e0119.jpg", "19": "img/ss_imgs/19-87c1b99d.jpg", "20": "img/ss_imgs/20-0583c6e3.jpg", "21": "img/ss_imgs/21-9c231249.jpg", "22": "img/ss_imgs/22-943e6d65.jpg", "23": "img/ss_imgs/23-00a07d57.jpg"};
 const SS_GIMG = {"coaster": "img/ss_gimg/coaster-3a5f643c.jpg", "stamp": "img/ss_gimg/stamp-3fd74f4e.jpg", "seal": "img/ss_gimg/seal-5a055d1b.jpg", "pc": "img/ss_gimg/pc-a2d7374e.jpg", "postcard": "img/ss_gimg/postcard-ba976eb1.jpg", "set": "img/ss_gimg/set-31d79178.jpg"};
 const SS_GUIDES = [{"title": "일정 · 예약 · 공지", "img": "img/ss_guides/info-6bf53d35.jpg"}, {"title": "콜라보 메뉴", "img": "img/ss_guides/menu-3dd7eded.jpg"}, {"title": "MD 1", "img": "img/ss_guides/md1-07a02976.jpg"}, {"title": "MD 2", "img": "img/ss_guides/md2-99d2dcd7.jpg"}, {"title": "메뉴 스탬프 · 해시태그 이벤트", "img": "img/ss_guides/ev-2f72cd3a.jpg"}, {"title": "증정품 (GIFT)", "img": "img/ss_guides/gift-d288154b.jpg"}, {"title": "럭키 드로우 이벤트", "img": "img/ss_guides/ld-2a13849e.jpg"}];
@@ -949,6 +951,28 @@ const SG_ITEMS = [
   {no:16,cat:"키링·인형",name:"꼬치 인형 키링 (2종)",sub:"꼬치 인형 + 포토카드",price:27000,vars:["지우&동찬","선의&철호"],note:"팝업샵 2주차 입고 예정 · 정확한 입고 일정은 추후 모펀 스토어 아이파크몰 용산점 X 계정으로 안내"},
 ];
 const EVENTS = [{
+  id:"pz",
+  work:"피자배달부와 골드팰리스",
+  kw:"피자배달부와 골드팰리스 피자배달부 골드팰리스 피배골 피골 피자 the pizza delivery man gold palace 업피자 up pizza 도우원 강서안 어피 마루 망원 마포",
+  title:"UP PIZZA Collaboration Cafe",
+  cardSub:"마루 1F",
+  sub:"마루 1F (서울 마포구 월드컵로8길 69)",
+  subFull:"피자배달부와 골드팰리스 콜라보 카페 계산기",
+  dates:"2026.11.27(금) - 2026.12.6(일)",
+  imgs:{}, gimg:{},
+  cover:PZ_COVER,
+  catLabel:"구분",
+  cats:[],
+  items:[],
+  giftTitle:"특전",
+  gifts:[],
+  notes:[
+    "메뉴, MD, 이벤트, 특전은 추후 공개 예정이에요.",
+    "운영 기간은 2026.11.27(금)~12.6(일), 오전 11시~오후 9시예요. 위치는 서울특별시 마포구 월드컵로8길 69 마루 1F예요.",
+    "예약은 2026.11.12(목) 오후 3시에 열려요."
+  ],
+  guides:PZ_GUIDES
+},{
   id:"ss",
   work:"솔트 소사이어티",
   kw:"솔트 소사이어티 솔소사 솔소티 솔트소사 솔소 솔트 솔트소사이어티 salt society 조연오 소기현 투니크 toonique 홍대",
@@ -1733,7 +1757,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
@@ -2132,7 +2156,9 @@ function render(){
       list.appendChild(h);
     }
     items.forEach(it=>list.appendChild(buildItem(it,cur)));
-    if(!list.children.length){
+    if(!EV.items.length){
+      list.innerHTML = `<div class="item" style="display:block;line-height:1.6"><b>메뉴·MD는 아직 공개 전이에요.</b><ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">${(EV.notes||[]).map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>`;
+    } else if(!list.children.length){
       list.innerHTML = `<div class="item" style="color:var(--muted)">조건에 맞는 굿즈가 없어요.</div>`;
     }
   }
