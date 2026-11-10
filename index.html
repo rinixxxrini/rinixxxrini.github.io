@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261102">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261110">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261102">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261110">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -876,6 +876,8 @@ const WS_ITEMS = [
   {no:19,tag:"08",cat:"상품",name:"콜렉트 바인더 1종 + A4 포스터 1종",sub:"표지 265×315mm, 속지 A4 · 속지: 색지용/엽서용/포스터용/코스터용/미니 포토카드용 각 3매씩 15매",price:25000},
   {no:20,tag:"09",cat:"상품",name:"The S세트 (리뉴얼)",sub:"엽서 10종 + 렌티큘러 엽서 2종 + 3D 렌티큘러 엽서 2종",price:26000,note:"19세 미만 구매 불가 · 결제 시 신분증 확인"},
 ];
+const WF_COVER = "img/wf_cover/cover-34f58b3d.jpg";
+const WF_GUIDES = [{"title": "메인 포스터", "img": "img/wf_guides/poster-6b686423.jpg"}, {"title": "행사장 MAP", "img": "img/wf_guides/map-17b04553.jpg"}, {"title": "레지너리 (레진)", "img": "img/wf_guides/lz1-871e6536.jpg"}, {"title": "레지너리 부스", "img": "img/wf_guides/lz2-54608978.jpg"}, {"title": "레지너리 이벤트", "img": "img/wf_guides/lz3-3c2c4f82.jpg"}, {"title": "레지너리 리워드", "img": "img/wf_guides/lz4-e32d4f9c.jpg"}, {"title": "레지너리 안내사항", "img": "img/wf_guides/lz5-fbc5c4e1.jpg"}, {"title": "봄타운 (봄툰)", "img": "img/wf_guides/bt1-4423ea28.jpg"}, {"title": "봄타운 부스", "img": "img/wf_guides/bt2-ae641210.jpg"}, {"title": "봄타운 방문 특전 · 이벤트", "img": "img/wf_guides/bt3-e3fc1259.jpg"}, {"title": "봄타운 리워드", "img": "img/wf_guides/bt4-7f65b44f.jpg"}, {"title": "봄툰 안내사항", "img": "img/wf_guides/bt5-02dd9beb.jpg"}];
 const PZ_COVER = "img/pz_cover/cover-e719bbf9.jpg";
 const PZ_GUIDES = [{"title": "메인 이미지 · 일정", "img": "img/pz_guides/kv-69a25bd3.jpg"}];
 const PZ_IMGS = {"1": "img/pz_imgs/1-05dd92f7.jpg", "2": "img/pz_imgs/2-d6cf960c.jpg", "3": "img/pz_imgs/3-d13abcdc.jpg", "4": "img/pz_imgs/4-e74be175.jpg", "5": "img/pz_imgs/5-875b6214.jpg", "6": "img/pz_imgs/6-43f065f1.jpg", "7": "img/pz_imgs/7-ad366dd4.jpg", "8": "img/pz_imgs/8-a988cc79.jpg", "9": "img/pz_imgs/9-a75aff85.jpg", "10": "img/pz_imgs/10-7a09b100.jpg", "11": "img/pz_imgs/11-43b1fd2b.jpg", "21": "img/pz_imgs/21-217a636d.jpg", "22": "img/pz_imgs/22-f8bec7f4.jpg", "23": "img/pz_imgs/23-238a21cf.jpg", "24": "img/pz_imgs/24-dbb0d389.jpg", "25": "img/pz_imgs/25-10726561.jpg", "26": "img/pz_imgs/26-c519b568.jpg", "27": "img/pz_imgs/27-de1c6c5d.jpg", "28": "img/pz_imgs/28-71c73441.jpg", "29": "img/pz_imgs/29-8078f9c6.jpg", "30": "img/pz_imgs/30-a0dd9615.jpg", "31": "img/pz_imgs/31-0ff7b3c9.jpg", "32": "img/pz_imgs/32-faa63418.jpg", "33": "img/pz_imgs/33-17c15589.jpg", "34": "img/pz_imgs/34-158abdff.jpg", "35": "img/pz_imgs/35-74d132fd.jpg"};
@@ -984,6 +986,33 @@ const SG_ITEMS = [
   {no:16,cat:"키링·인형",name:"꼬치 인형 키링 (2종)",sub:"꼬치 인형 + 포토카드",price:27000,vars:["지우&동찬","선의&철호"],note:"팝업샵 2주차 입고 예정 · 정확한 입고 일정은 추후 모펀 스토어 아이파크몰 용산점 X 계정으로 안내"},
 ];
 const EVENTS = [{
+  id:"wf",
+  work:"2026 위페스타",
+  kw:"위페스타 2026위페스타 wefesta we festa 위페 레진 레진코믹스 lezhin 레지너리 lezhinery 봄툰 bomtoon 봄타운 bomtown 재이미 teaz 레봄 봄노벨 키다리스튜디오 파이팩토리 광진구 광나루로",
+  title:"2026 WEFESTA",
+  cardSub:"파이팩토리",
+  sub:"파이팩토리 (서울특별시 광진구 광나루로 441)",
+  subFull:"2026 위페스타 (WE FESTA) 계산기",
+  dates:"2026.11.20(금) - 2026.11.22(일)",
+  imgs:{}, gimg:{},
+  cover:WF_COVER,
+  catLabel:"구분",
+  cats:[],
+  items:[],
+  giftTitle:"특전",
+  gifts:[],
+  notes:[
+    "지금은 행사 정보와 부스 이벤트만 정리했어요.",
+    "기간은 2026.11.20(금)~11.22(일) 3일간이고, 장소는 서울특별시 광진구 광나루로 441 파이팩토리예요.",
+    "세션별(회차별) 입장 방식이라 예매한 날짜와 세션을 꼭 확인하세요. 프로그램 참여와 리워드 수령은 해당 세션 안에 해야 해요.",
+    "레지너리(레진): 방문 특전은 취향 파우치, 작품 로고 스티커(10개 자율 획득), 레진 클리어 파일, 레진 축전 엽서(BL/HL 장르 선택 1개 랜덤)예요.",
+    "레지너리 이벤트: ① What's in my Basket? 작품 QR을 바스켓에 담아 공유하면 취향 작품 엽서 + 레진 코인 20개 쿠폰 ② Receipt Flex 영수증 인증 시 추첨으로 레진 코인 쿠폰 (#LEZHINERY_RECEIPTFLEX #2026위페스타 #레진코믹스) ③ SNS 방문 인증 시 레진 축전 엽서 (#2026위페스타 #레진코믹스 #LEZHINERY)",
+    "봄타운(봄툰): 부스 방문 특전은 탐정 스탬프판, 봄툰 클리어 파일, 봄툰 축전 엽서 1개 랜덤이에요.",
+    "봄타운 이벤트: ① 도둑을 찾아라! 완료 시 마을 주민증 + 스티커북 + 봄툰 코인 20개 쿠폰 ② 굿즈 포토존 SNS 인증 시 추첨으로 코인 (#BOMTOON_BOMTOWN #2026위페스타 #봄툰) ③ SNS 방문 인증 시 봄툰 축전 엽서 1종 랜덤 (#2026위페스타 #봄툰 #BOMTOWN)",
+    "모든 특전과 리워드는 선착순이고 소진되면 안내 없이 끝날 수 있어요. 리워드는 퇴장할 때 지정된 수령처에서 한꺼번에 받아요."
+  ],
+  guides:WF_GUIDES
+},{
   id:"pz",
   work:"피자배달부와 골드팰리스",
   kw:"피자배달부와 골드팰리스 피자배달부 골드팰리스 피배골 피골 피달부 피달부팝업 피자 the pizza delivery man gold palace 업피자 up pizza 도우원 강서안 우원 서안 어피 마루 망원 마포",
@@ -1824,7 +1853,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
@@ -2224,7 +2253,7 @@ function render(){
     }
     items.forEach(it=>list.appendChild(buildItem(it,cur)));
     if(!EV.items.length){
-      list.innerHTML = `<div class="item" style="display:block;line-height:1.6"><b>메뉴·MD는 아직 공개 전이에요.</b><ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">${(EV.notes||[]).map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>`;
+      list.innerHTML = `<div class="item" style="display:block;line-height:1.6"><b>굿즈 정보는 아직 공개 전이에요.</b><ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">${(EV.notes||[]).map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>`;
     } else if(!list.children.length){
       list.innerHTML = `<div class="item" style="color:var(--muted)">조건에 맞는 굿즈가 없어요.</div>`;
     }
