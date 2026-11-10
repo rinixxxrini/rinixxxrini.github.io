@@ -345,6 +345,8 @@ body.home{background:linear-gradient(var(--htop) 0,var(--homebg) 170px) no-repea
 .bspot{position:absolute;padding:0;border:2px solid transparent;border-radius:6px;background:transparent;cursor:pointer}
 .bspot:hover{border-color:var(--wine);background:rgba(140,30,50,.08)}
 .bspot.on{border-color:var(--wine);background:rgba(140,30,50,.14)}
+.stampbar{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;margin:0 0 8px;padding:8px 12px;background:var(--wine-soft);border-radius:4px;font-size:13px}
+.stampbar span{color:var(--muted);font-size:12.5px}
 .bhint{margin:4px 0 8px;font-size:12px;color:var(--muted)}
 .bchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
 .bchip{font:inherit;font-size:12.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--ink);cursor:pointer}
@@ -893,8 +895,8 @@ const WS_ITEMS = [
 const WF_COVER = "img/wf_cover/cover-34f58b3d.jpg";
 const WF_GUIDES = [{"title": "메인 포스터", "img": "img/wf_guides/poster-6b686423.jpg"}, {"title": "행사장 MAP", "img": "img/wf_guides/map-17b04553.jpg"}, {"title": "레지너리 (레진)", "img": "img/wf_guides/lz1-871e6536.jpg"}, {"title": "레지너리 부스", "img": "img/wf_guides/lz2-54608978.jpg"}, {"title": "레지너리 이벤트", "img": "img/wf_guides/lz3-3c2c4f82.jpg"}, {"title": "레지너리 리워드", "img": "img/wf_guides/lz4-e32d4f9c.jpg"}, {"title": "레지너리 안내사항", "img": "img/wf_guides/lz5-fbc5c4e1.jpg"}, {"title": "봄타운 (봄툰)", "img": "img/wf_guides/bt1-4423ea28.jpg"}, {"title": "봄타운 부스", "img": "img/wf_guides/bt2-ae641210.jpg"}, {"title": "봄타운 방문 특전 · 이벤트", "img": "img/wf_guides/bt3-e3fc1259.jpg"}, {"title": "봄타운 리워드", "img": "img/wf_guides/bt4-7f65b44f.jpg"}, {"title": "봄툰 안내사항", "img": "img/wf_guides/bt5-02dd9beb.jpg"}];
 const WF_IMGS = {"1": "img/wf_imgs/1-4ef6f67e.jpg", "2": "img/wf_imgs/2-58c08db1.jpg", "4": "img/wf_imgs/3-a06dd341.jpg", "5": "img/wf_imgs/4-f443ed3d.jpg", "6": "img/wf_imgs/5-1f90c5df.jpg", "7": "img/wf_imgs/6-7825cece.jpg", "15": "img/wf_imgs/7-52b4049b.jpg", "31": "img/wf_imgs/11-e283957c.jpg", "32": "img/wf_imgs/12-80daae42.jpg", "33": "img/wf_imgs/13-a1196933.jpg", "34": "img/wf_imgs/14-ac8d817c.jpg", "35": "img/wf_imgs/15-a8cad47b.jpg", "36": "img/wf_imgs/16-ac473a4c.jpg", "41": "img/wf_imgs/21-19fd49ed.jpg", "42": "img/wf_imgs/22-102285df.jpg", "43": "img/wf_imgs/23-e8660bef.jpg", "44": "img/wf_imgs/24-610fc592.jpg", "37": "img/wf_imgs/25-6b19c053.jpg", "38": "img/wf_imgs/26-70e995fd.jpg", "39": "img/wf_imgs/27-aa48fd9f.jpg", "21": "img/wf_imgs/31-20fce39d.jpg", "22": "img/wf_imgs/32-7ebbf007.jpg", "23": "img/wf_imgs/33-e9f483e1.jpg", "24": "img/wf_imgs/34-c62e6800.jpg", "25": "img/wf_imgs/35-d58716e2.jpg", "26": "img/wf_imgs/36-1111c986.jpg", "3": "img/wf_imgs/2-58c08db1.jpg", "8": "img/wf_imgs/9-a7dd1b4a.jpg", "9": "img/wf_imgs/10-d0557ac4.jpg", "11": "img/wf_imgs/12-649cd3be.jpg", "12": "img/wf_imgs/13-d31905f1.jpg", "14": "img/wf_imgs/15-827020be.jpg", "10": "img/wf_imgs/10-d0557ac4.jpg", "13": "img/wf_imgs/13-d31905f1.jpg"};
-const WF_GIMG = {"cup": "img/wf_gimg/cup-a5a93f25.jpg", "card": "img/wf_gimg/card-72b66107.jpg", "bm": "img/wf_gimg/bm-d2ee658b.jpg", "lzr": "img/wf_gimg/lzr-75eac172.jpg", "btr": "img/wf_gimg/btr-5543e62f.jpg", "jms": "img/wf_gimg/jms-37a2d1b8.jpg", "jmw": "img/wf_gimg/jmw-f35044ae.jpg", "jmp": "img/wf_gimg/jmp-f57ed34e.jpg", "bn": "img/wf_gimg/bn-2a879c65.jpg", "wtlogo": "img/wf_gimg/wtlogo-90028949.jpg", "wtbar": "img/wf_gimg/wtbar-6902568c.jpg", "wtstand": "img/wf_gimg/wtstand-423a577c.jpg", "wepc": "img/wf_gimg/wepc-f8bbda5a.jpg", "mpc": "img/wf_gimg/mpc-b0ed68c9.jpg", "draw": "img/wf_gimg/draw-4cdc77b7.jpg"};
-const WF_GUIDES2 = [{"title": "오피셜 머치 스토어 구매 특전", "img": "img/wf_guides/merch-56f7e7a8.jpg"}, {"title": "위페스타 스페셜 드로우", "img": "img/wf_guides/draw-f6cdae7b.jpg"}, {"title": "봄노벨", "img": "img/wf_guides/bn1-69bf3b80.jpg"}, {"title": "봄노벨 명대사 엽서", "img": "img/wf_guides/bn2-4494530c.jpg"}, {"title": "재이미 팩토리", "img": "img/wf_guides/jm1-fd044215.jpg"}, {"title": "재이미 팩토리 부스", "img": "img/wf_guides/jm2-5b8c5fe0.jpg"}, {"title": "재이미 팩토리 이벤트", "img": "img/wf_guides/jm3-4c1bccc2.jpg"}, {"title": "살롱 드 르봉 ver.2", "img": "img/wf_guides/lb1-779b2f77.jpg"}, {"title": "살롱 드 르봉 특전", "img": "img/wf_guides/lb2-9eb663e8.jpg"}, {"title": "르봉 오프라인 테마 MD 1", "img": "img/wf_guides/off1-609c086a.jpg"}, {"title": "르봉 오프라인 테마 MD 2", "img": "img/wf_guides/off2-6a5b58f1.jpg"}, {"title": "르봉 온라인 테마 MD (재이미샵)", "img": "img/wf_guides/on-2cde0058.jpg"}, {"title": "르봉 스페셜 패키지 · 방문 특전", "img": "img/wf_guides/pkg-7031a8f4.jpg"}, {"title": "WE 라이브러리", "img": "img/wf_guides/lib-a54ee146.jpg"}, {"title": "레봄 · WE 라이브러리 안내", "img": "img/wf_guides/lbn-718efe9e.jpg"}, {"title": "재이미 팩토리 이벤트 · 유의사항", "img": "img/wf_guides/jmev-a6876ecb.jpg"}, {"title": "재이미 팩토리 MD LIST", "img": "img/wf_guides/jmmd-a0d6e277.jpg"}, {"title": "월드투어 라이브", "img": "img/wf_guides/wt0-bbdc0784.jpg"}, {"title": "월드투어 MD 1", "img": "img/wf_guides/wt1-55ecf4f1.jpg"}, {"title": "월드투어 MD 2", "img": "img/wf_guides/wt2-623aa174.jpg"}, {"title": "월드투어 이벤트", "img": "img/wf_guides/wt3-30a76e45.jpg"}, {"title": "월드투어 현장 응모", "img": "img/wf_guides/wt4-6a999956.jpg"}];
+const WF_GIMG = {"cup": "img/wf_gimg/cup-a5a93f25.jpg", "card": "img/wf_gimg/card-72b66107.jpg", "bm": "img/wf_gimg/bm-d2ee658b.jpg", "lzr": "img/wf_gimg/lzr-75eac172.jpg", "btr": "img/wf_gimg/btr-5543e62f.jpg", "jms": "img/wf_gimg/jms-37a2d1b8.jpg", "jmw": "img/wf_gimg/jmw-f35044ae.jpg", "jmp": "img/wf_gimg/jmp-f57ed34e.jpg", "bn": "img/wf_gimg/bn-2a879c65.jpg", "wtlogo": "img/wf_gimg/wtlogo-90028949.jpg", "wtbar": "img/wf_gimg/wtbar-6902568c.jpg", "wtstand": "img/wf_gimg/wtstand-423a577c.jpg", "wepc": "img/wf_gimg/wepc-f8bbda5a.jpg", "mpc": "img/wf_gimg/mpc-b0ed68c9.jpg", "draw": "img/wf_gimg/draw-4cdc77b7.jpg", "tzr": "img/wf_gimg/tzr-e0c1f16c.jpg", "snr": "img/wf_gimg/snr-afd021e2.jpg", "stp": "img/wf_gimg/stp-905c694d.jpg", "qz": "img/wf_gimg/qz-dca2cba4.jpg"};
+const WF_GUIDES2 = [{"title": "오피셜 머치 스토어 구매 특전", "img": "img/wf_guides/merch-56f7e7a8.jpg"}, {"title": "위페스타 스페셜 드로우", "img": "img/wf_guides/draw-f6cdae7b.jpg"}, {"title": "봄노벨", "img": "img/wf_guides/bn1-69bf3b80.jpg"}, {"title": "봄노벨 명대사 엽서", "img": "img/wf_guides/bn2-4494530c.jpg"}, {"title": "재이미 팩토리", "img": "img/wf_guides/jm1-fd044215.jpg"}, {"title": "재이미 팩토리 부스", "img": "img/wf_guides/jm2-5b8c5fe0.jpg"}, {"title": "재이미 팩토리 이벤트", "img": "img/wf_guides/jm3-4c1bccc2.jpg"}, {"title": "살롱 드 르봉 ver.2", "img": "img/wf_guides/lb1-779b2f77.jpg"}, {"title": "살롱 드 르봉 특전", "img": "img/wf_guides/lb2-9eb663e8.jpg"}, {"title": "르봉 오프라인 테마 MD 1", "img": "img/wf_guides/off1-609c086a.jpg"}, {"title": "르봉 오프라인 테마 MD 2", "img": "img/wf_guides/off2-6a5b58f1.jpg"}, {"title": "르봉 온라인 테마 MD (재이미샵)", "img": "img/wf_guides/on-2cde0058.jpg"}, {"title": "르봉 스페셜 패키지 · 방문 특전", "img": "img/wf_guides/pkg-7031a8f4.jpg"}, {"title": "WE 라이브러리", "img": "img/wf_guides/lib-a54ee146.jpg"}, {"title": "레봄 · WE 라이브러리 안내", "img": "img/wf_guides/lbn-718efe9e.jpg"}, {"title": "재이미 팩토리 이벤트 · 유의사항", "img": "img/wf_guides/jmev-a6876ecb.jpg"}, {"title": "재이미 팩토리 MD LIST", "img": "img/wf_guides/jmmd-a0d6e277.jpg"}, {"title": "월드투어 라이브", "img": "img/wf_guides/wt0-bbdc0784.jpg"}, {"title": "월드투어 MD 1", "img": "img/wf_guides/wt1-55ecf4f1.jpg"}, {"title": "월드투어 MD 2", "img": "img/wf_guides/wt2-623aa174.jpg"}, {"title": "월드투어 이벤트", "img": "img/wf_guides/wt3-30a76e45.jpg"}, {"title": "월드투어 현장 응모", "img": "img/wf_guides/wt4-6a999956.jpg"}, {"title": "티즈 (Teaz)", "img": "img/wf_guides/tz1-a18fda81.jpg"}, {"title": "티즈관", "img": "img/wf_guides/tz2-6890267b.jpg"}, {"title": "티즈 이벤트", "img": "img/wf_guides/tz3-0f4c8c49.jpg"}, {"title": "티즈 안내사항", "img": "img/wf_guides/tz4-c8815e88.jpg"}, {"title": "레진스낵", "img": "img/wf_guides/sn1-47b85110.jpg"}, {"title": "레진스낵 이벤트", "img": "img/wf_guides/sn2-d6aa7103.jpg"}, {"title": "레진스낵 안내사항", "img": "img/wf_guides/sn3-69017b53.jpg"}, {"title": "재이미룸 이벤트", "img": "img/wf_guides/st1-65903ea6.jpg"}, {"title": "퀴즈 · 스탬프 투어 이벤트", "img": "img/wf_guides/st2-7e25a1d5.jpg"}, {"title": "스탬프 투어 MAP", "img": "img/wf_guides/st3-52382261.jpg"}];
 const WF_CATS = ["살롱 드 르봉 2","월드투어","도서전"];
 const WF_ITEMS = [
   {no:1,cat:"살롱 드 르봉 2",name:"아크릴 스탠드",sub:"17종 중 선택 · 약 120×170mm",price:15000},
@@ -1042,7 +1044,7 @@ const SG_ITEMS = [
 const EVENTS = [{
   id:"wf",
   work:"2026 위페스타",
-  kw:"위페스타 2026위페스타 wefesta we festa 위페 레진 레진코믹스 lezhin 레지너리 lezhinery 봄툰 bomtoon 봄타운 bomtown 재이미 teaz 레봄 살롱드르봉 살롱 드 르봉 르봉 봄노벨 키다리스튜디오 파이팩토리 광진구 광나루로",
+  kw:"위페스타 2026위페스타 wefesta we festa 위페 레진 레진코믹스 lezhin 레지너리 lezhinery 봄툰 bomtoon 봄타운 bomtown 재이미 teaz 티즈 레진스낵 lezhinsnack 레봄 살롱드르봉 살롱 드 르봉 르봉 봄노벨 키다리스튜디오 파이팩토리 광진구 광나루로",
   title:"2026 WEFESTA",
   cardSub:"파이팩토리",
   sub:"파이팩토리 (서울특별시 광진구 광나루로 441)",
@@ -1084,8 +1086,10 @@ const EVENTS = [{
       {id:"jm",name:"재이미 팩토리",sub:"재이미룸 · 재이미샵",z:[[56.8,25.6,11,12.8],[60.1,41.5,19.8,29.3]]},
       {id:"lb",name:"레봄",sub:"살롱 드 르봉 2",z:[[78,57.9,12.5,36.6]]},
       {id:"lib",name:"WE 라이브러리",z:[[78,14,12.5,27.4]]},
+      {id:"tz",name:"티즈",sub:"Teaz",z:[[67.8,15.9,10.1,25.6]],info:"EVENT 1·2는 중복 참여할 수 있어요. 엽서는 9종 중 랜덤이라 디자인 선택·교환이 안 돼요. 태블릿 수량에 따라 대기가 생기거나 대기 접수가 일찍 마감될 수 있어요."},
+      {id:"sn",name:"레진스낵",z:[[60.8,4.5,14.9,10.7]],info:"〈광안〉, 〈체크메이트〉 배우·감독 GV 무대도 있어요. 특전은 1인 1회, 1일 구독권은 계정당 1번만 쓸 수 있어요."},
       {id:"mo",name:"오피셜 머치 스토어",z:[[38.1,57.3,21.6,37.2]],info:"구매 특전(WE포토카드·특전 포토카드)과 스페셜 드로우는 MD 구매 탭에서 담은 금액으로 계산돼요. 상품은 일자별로 재입고되고 당일 수량이 소진되면 조기 품절될 수 있어요."},
-      {id:"rw",name:"리워드존",z:[[91.4,62.6,7,31]],info:"부스 이벤트 리워드는 퇴장할 때 이곳에서 한꺼번에 받아요. 모든 특전은 선착순이에요."}
+      {id:"rw",name:"리워드존",z:[[91.4,62.6,7,31]],info:"행사장 밖 C동에 있어요. 스탬프 투어 실물 WE포토카드를 여기서 받고, 세션과 상관없이 관람을 마친 뒤 들르면 돼요. 부스 이벤트 리워드도 퇴장할 때 이곳에서 한꺼번에 받아요. 모든 특전은 선착순이에요."}
     ]},
     sub:"받은 특전을 체크해 두세요",
     items:[
@@ -1105,7 +1109,21 @@ const EVENTS = [{
       {k:"wt2",b:"wt",img:"wtbar",name:"월드투어 라이브 관 · SNS 방문 인증",cond:"수화물 바코드 스티커 7종 중 랜덤 1장 · #월드드랍 #월드투어라이브 #레진 #봄툰 #2026위페스타"},
       {k:"wt3",b:"wt",img:"wtstand",name:"월드투어 라이브 관 · 현장 응모 이벤트",cond:"응모권에 성함·이메일·받고 싶은 작품명을 써서 응모함에 넣기 · 세션별 1인 1회 · 10명 추첨으로 대형 비디오 콜 스탠드 2종 세트 · 12/1 메일 발표"},
       {k:"lb",b:"lb",img:"card",name:"레봄 · 부스 방문 특전",cond:"살롱 드 르봉 ver.2 멤버십 카드 8종 중 랜덤 1종"},
-      {k:"lib",b:"lib",img:"bm",name:"WE 라이브러리 · 부스 방문 특전",cond:"명대사 책갈피 20종 중 마음에 드는 것 1개 선택 · 교환 독서 이벤트도 있어요"}
+      {k:"lib",b:"lib",img:"bm",name:"WE 라이브러리 · 부스 방문 특전",cond:"명대사 책갈피 20종 중 마음에 드는 것 1개 선택 · 교환 독서 이벤트도 있어요"},
+      {k:"tz1",b:"tz",img:"tzr",name:"티즈 · 회원가입 이벤트",cond:"티즈 회원가입 후 현장에서 인증하면 대화방 투명 포토 엽서 1개(9종 랜덤) + 티즈 스타 2,000개 쿠폰"},
+      {k:"tz2",b:"tz",img:"tzr",name:"티즈 · 서비스 체험",cond:"티즈관에서 캐릭터와 직접 대화하고 체험 완료를 확인받으면 대화방 투명 포토 엽서 1개(9종 랜덤)"},
+      {k:"sn1",b:"sn",img:"snr",name:"레진스낵 · 앱 다운로드 인증",cond:"레진스낵 앱 설치를 현장에서 확인받으면 1일 구독권 쿠폰 + 팝콘 스낵 · 1인 1회"},
+      {k:"sp1",b:"bt",img:"stp",stamp:true,daily:true,name:"봄타운 · 스탬프 투어 1번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp2",b:"bn",img:"stp",stamp:true,daily:true,name:"봄노벨 · 스탬프 투어 2번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp3",b:"lz",img:"stp",stamp:true,daily:true,name:"레지너리 · 스탬프 투어 3번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp4",b:"wt",img:"stp",stamp:true,daily:true,name:"월드투어 라이브 · 스탬프 투어 4번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp5",b:"sn",img:"stp",stamp:true,daily:true,name:"레진스낵 · 스탬프 투어 5번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp6",b:"tz",img:"stp",stamp:true,daily:true,name:"티즈 · 스탬프 투어 6번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp7",b:"jm",img:"stp",stamp:true,daily:true,name:"재이미룸 · 스탬프 투어 7번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp8",b:"jm",img:"stp",stamp:true,daily:true,name:"재이미샵 · 스탬프 투어 8번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"sp9",b:"lb",img:"stp",stamp:true,daily:true,name:"레봄 · 스탬프 투어 9번 스탬프",cond:"부스에 안내된 특정 이미지를 재이미룸 앱 '스캔'으로 인식하면 자동으로 모여요"},
+      {k:"qz",b:"jm",img:"qz",daily:true,name:"재이미룸 · 위페스타 퀴즈",cond:"재이미룸 앱 위페스타 테마에서 퀴즈에 참여하면 디지털 WE포토카드 5장 · 세션당 1회(1일 최대 4회) · 리워드는 앱으로 자동 지급"},
+      {k:"spr",b:"rw",img:"stp",daily:true,name:"리워드존 · 스탬프 투어 리워드",cond:"스탬프 4개를 모으면 실물 WE포토카드 1장 랜덤, 9개를 모두 모으면 2장 더(총 3장) · 1일 1회(3일 오면 3회)"}
     ],
     note:"방문 특전은 리플릿 1매당 1회예요. 리플릿을 2매 이상 가져와도 대기 1회당 1매만 쓸 수 있어요.",
     notes:[
@@ -2162,13 +2180,16 @@ function shownItems(C){
   const sel = wfBooth[EV.id]||"", bs = C.map.booths;
   if(sel) return C.items.filter(i=>i.b===sel);
   let last=null;
-  return C.items.map(i=>{ const h = i.b!==last ? (bs.find(x=>x.id===i.b)||{}).name : ""; last=i.b; return h ? Object.assign(Object.create(i),{_h:h}) : i; });
+  const ord = b=>{ const x=bs.findIndex(y=>y.id===b); return x<0?99:x; };
+  return C.items.map((i,n)=>[i,n]).sort((a,b)=>ord(a[0].b)-ord(b[0].b)||a[1]-b[1]).map(([i])=>i).map(i=>{ const h = i.b!==last ? (bs.find(x=>x.id===i.b)||{}).name : ""; last=i.b; return h ? Object.assign(Object.create(i),{_h:h}) : i; });
 }
 function boothMapHTML(C){
   const sel = wfBooth[EV.id]||"", bs=C.map.booths, B=bs.find(x=>x.id===sel);
   return `<div class="bmap"><img src="${C.map.img}" alt="행사장 지도">` +
     bs.map(b=>b.z.map(z=>`<button type="button" class="bspot${b.id===sel?" on":""}" data-booth="${b.id}" style="left:${z[0]}%;top:${z[1]}%;width:${z[2]}%;height:${z[3]}%" aria-label="${esc(b.name)}"></button>`).join("")).join("") +
     `</div><p class="bhint">지도에서 부스를 누르면 그 부스 이벤트만 모아 보여요</p>` +
+    (C.items.some(i=>i.stamp) ? (()=>{ const st=C.items.filter(i=>i.stamp), d=st.filter(isDone).length;
+      return `<div class="stampbar"><b>오늘 스탬프 ${d}/${st.length}</b><span>${d>=st.length?"9개 완성! 리워드존에서 포토카드 3장":d>=4?`포토카드 1장 확보 · ${st.length-d}개 더 모으면 2장 더`:`${4-d}개 더 모으면 포토카드 1장`}</span></div>`; })() : "") +
     `<div class="bchips"><button type="button" class="bchip${sel?"":" on"}" data-booth="">전체</button>` +
     bs.map(b=>`<button type="button" class="bchip${b.id===sel?" on":""}" data-booth="${b.id}">${esc(b.name)}</button>`).join("") + `</div>` +
     `<div id="bmapList">${B ? `<h3 class="bhead">${esc(B.name)}${B.sub?` <small>${esc(B.sub)}</small>`:""}</h3>${B.info?`<div class="gnote">${esc(B.info)}</div>`:""}` : ""}</div>`;
