@@ -340,6 +340,17 @@ body.home{background:linear-gradient(var(--htop) 0,var(--homebg) 170px) no-repea
 .bar.folded .receipt,.bar.folded .curlist,.bar.folded .giftline,.bar.folded .acts{display:none}
 .bar.folded{padding-top:9px;padding-bottom:calc(9px + env(safe-area-inset-bottom,0px))}
 .bar.folded .tot{font-size:22px}
+.bmap{position:relative;margin:10px 0 4px;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
+.bmap img{display:block;width:100%;height:auto}
+.bspot{position:absolute;padding:0;border:2px solid transparent;border-radius:6px;background:transparent;cursor:pointer}
+.bspot:hover{border-color:var(--wine);background:rgba(140,30,50,.08)}
+.bspot.on{border-color:var(--wine);background:rgba(140,30,50,.14)}
+.bhint{margin:4px 0 8px;font-size:12px;color:var(--muted)}
+.bchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.bchip{font:inherit;font-size:12.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--ink);cursor:pointer}
+.bchip.on{background:var(--wine);border-color:var(--wine);color:#fff}
+.bhead{margin:14px 0 2px;font-size:14.5px}
+.bhead small{font-size:12px;color:var(--muted);font-weight:500}
 .itags{display:flex;align-items:flex-start;gap:8px;margin-top:6px;padding:7px 10px;background:var(--chip);border-radius:4px}
 .itags .tags2{flex:1;font-size:12.5px;line-height:1.6;color:var(--ink);word-break:keep-all;user-select:all;-webkit-user-select:all}
 .itags button{flex:none;font:inherit;font-size:12px;font-weight:600;padding:4px 10px;border-radius:3px;border:1px solid var(--wine);background:var(--wine);color:#fff;cursor:pointer}
@@ -1065,25 +1076,36 @@ const EVENTS = [{
     title:"부스 방문 특전 · 이벤트",
     tab:"부스 이벤트",
     tagsPer:true,
+    map:{img:"img/wf_gimg/map-9fbbcc2b.jpg",booths:[
+      {id:"lz",name:"레지너리",sub:"레진코믹스",z:[[2.6,4.3,34.8,23.4]]},
+      {id:"bt",name:"봄타운",sub:"봄툰",z:[[2.6,46.7,20.1,33.2]]},
+      {id:"bn",name:"봄노벨",z:[[2.6,37.8,16.7,8.5]]},
+      {id:"wt",name:"월드투어 라이브",z:[[23.7,31.1,13.9,25.6]]},
+      {id:"jm",name:"재이미 팩토리",sub:"재이미룸 · 재이미샵",z:[[56.8,25.6,11,12.8],[60.1,41.5,19.8,29.3]]},
+      {id:"lb",name:"레봄",sub:"살롱 드 르봉 2",z:[[78,57.9,12.5,36.6]]},
+      {id:"lib",name:"WE 라이브러리",z:[[78,14,12.5,27.4]]},
+      {id:"mo",name:"오피셜 머치 스토어",z:[[38.1,57.3,21.6,37.2]],info:"구매 특전(WE포토카드·특전 포토카드)과 스페셜 드로우는 MD 구매 탭에서 담은 금액으로 계산돼요. 상품은 일자별로 재입고되고 당일 수량이 소진되면 조기 품절될 수 있어요."},
+      {id:"rw",name:"리워드존",z:[[91.4,62.6,7,31]],info:"부스 이벤트 리워드는 퇴장할 때 이곳에서 한꺼번에 받아요. 모든 특전은 선착순이에요."}
+    ]},
     sub:"받은 특전을 체크해 두세요",
     items:[
-      {k:"lz0",img:"lzr",name:"레지너리 · 방문 특전",cond:"취향 파우치, 작품 로고 스티커(10개 자율 획득), 레진 클리어 파일, 레진 축전 엽서(BL/HL 장르 선택 1개 랜덤)"},
-      {k:"lz1",img:"lzr",name:"레지너리 · What's in my Basket?",cond:"각 코너 작품 QR을 바스켓에 담아 공유하면 취향 작품 엽서(24종 중 랜덤 1종) + 레진 코인 20개 쿠폰"},
-      {k:"lz2",img:"lzr",name:"레지너리 · Receipt Flex",cond:"구매 영수증을 해시태그와 SNS 인증하면 추첨으로 레진 코인 쿠폰 · #LEZHINERY_RECEIPTFLEX #2026위페스타 #레진코믹스"},
-      {k:"lz3",img:"lzr",name:"레지너리 · SNS 방문 인증",cond:"레진 축전 엽서(BL/HL 장르 선택 1개 랜덤) · #2026위페스타 #레진코믹스 #LEZHINERY"},
-      {k:"bt0",img:"btr",name:"봄타운 · 부스 방문 특전",cond:"탐정 스탬프판, 봄툰 클리어 파일, 봄툰 축전 엽서 1개 랜덤"},
-      {k:"bt1",img:"btr",name:"봄타운 · 도둑을 찾아라!",cond:"마을 곳곳의 도둑을 검거하면 마을 주민증 + 스티커북 + 봄툰 코인 20개 쿠폰(18종 중 랜덤 1종)"},
-      {k:"bt2",img:"btr",name:"봄타운 · 굿즈 포토존",cond:"SNS 인증 시 추첨으로 코인 · #BOMTOON_BOMTOWN #2026위페스타 #봄툰"},
-      {k:"bt3",img:"btr",name:"봄타운 · SNS 방문 인증",cond:"봄툰 축전 엽서 1종 랜덤 · #2026위페스타 #봄툰 #BOMTOWN"},
-      {k:"bn",img:"bn",name:"봄노벨 · 나만의 명대사 엽서",cond:"봄툰 소설과 작가 전시를 보고 명대사를 골라 엽서로 출력"},
-      {k:"jm1",img:"jms",name:"재이미 팩토리 · 부스 방문 선물",cond:"재이미 스티커 8종 중 랜덤 1종 · 이벤트 1·2는 세션별 1회, 부스 퇴장 시 리플릿에 도장을 찍고 받아요"},
-      {k:"jm2",img:"jmw",name:"재이미 팩토리 · 대형 포토카드 포토존",cond:"인증샷을 SNS에 올리면 WE포토카드 1매(100종 중 랜덤) · #재이미팩토리 #2026위페스타"},
-      {k:"jm3",img:"jmp",name:"재이미 팩토리 · 방문 후기 이벤트",cond:"후기를 X나 인스타그램에 올리면 3명 추첨으로 구매 특전 포토카드 35종 세트 · 11/20~11/29, 11/30 DM 발표 · #재이미팩토리 #2026위페스타 #재이미샵"},
-      {k:"wt1",img:"wtlogo",name:"월드투어 라이브 관 · 부스 방문 선물",cond:"WORLD TOUR LIVE 또는 WORLD DROP 로고 스티커 3종 중 랜덤 1장"},
-      {k:"wt2",img:"wtbar",name:"월드투어 라이브 관 · SNS 방문 인증",cond:"수화물 바코드 스티커 7종 중 랜덤 1장 · #월드드랍 #월드투어라이브 #레진 #봄툰 #2026위페스타"},
-      {k:"wt3",img:"wtstand",name:"월드투어 라이브 관 · 현장 응모 이벤트",cond:"응모권에 성함·이메일·받고 싶은 작품명을 써서 응모함에 넣기 · 세션별 1인 1회 · 10명 추첨으로 대형 비디오 콜 스탠드 2종 세트 · 12/1 메일 발표"},
-      {k:"lb",img:"card",name:"레봄 · 부스 방문 특전",cond:"살롱 드 르봉 ver.2 멤버십 카드 8종 중 랜덤 1종"},
-      {k:"lib",img:"bm",name:"WE 라이브러리 · 부스 방문 특전",cond:"명대사 책갈피 20종 중 마음에 드는 것 1개 선택 · 교환 독서 이벤트도 있어요"}
+      {k:"lz0",b:"lz",img:"lzr",name:"레지너리 · 방문 특전",cond:"취향 파우치, 작품 로고 스티커(10개 자율 획득), 레진 클리어 파일, 레진 축전 엽서(BL/HL 장르 선택 1개 랜덤)"},
+      {k:"lz1",b:"lz",img:"lzr",name:"레지너리 · What's in my Basket?",cond:"각 코너 작품 QR을 바스켓에 담아 공유하면 취향 작품 엽서(24종 중 랜덤 1종) + 레진 코인 20개 쿠폰"},
+      {k:"lz2",b:"lz",img:"lzr",name:"레지너리 · Receipt Flex",cond:"구매 영수증을 해시태그와 SNS 인증하면 추첨으로 레진 코인 쿠폰 · #LEZHINERY_RECEIPTFLEX #2026위페스타 #레진코믹스"},
+      {k:"lz3",b:"lz",img:"lzr",name:"레지너리 · SNS 방문 인증",cond:"레진 축전 엽서(BL/HL 장르 선택 1개 랜덤) · #2026위페스타 #레진코믹스 #LEZHINERY"},
+      {k:"bt0",b:"bt",img:"btr",name:"봄타운 · 부스 방문 특전",cond:"탐정 스탬프판, 봄툰 클리어 파일, 봄툰 축전 엽서 1개 랜덤"},
+      {k:"bt1",b:"bt",img:"btr",name:"봄타운 · 도둑을 찾아라!",cond:"마을 곳곳의 도둑을 검거하면 마을 주민증 + 스티커북 + 봄툰 코인 20개 쿠폰(18종 중 랜덤 1종)"},
+      {k:"bt2",b:"bt",img:"btr",name:"봄타운 · 굿즈 포토존",cond:"SNS 인증 시 추첨으로 코인 · #BOMTOON_BOMTOWN #2026위페스타 #봄툰"},
+      {k:"bt3",b:"bt",img:"btr",name:"봄타운 · SNS 방문 인증",cond:"봄툰 축전 엽서 1종 랜덤 · #2026위페스타 #봄툰 #BOMTOWN"},
+      {k:"bn",b:"bn",img:"bn",name:"봄노벨 · 나만의 명대사 엽서",cond:"봄툰 소설과 작가 전시를 보고 명대사를 골라 엽서로 출력"},
+      {k:"jm1",b:"jm",img:"jms",name:"재이미 팩토리 · 부스 방문 선물",cond:"재이미 스티커 8종 중 랜덤 1종 · 이벤트 1·2는 세션별 1회, 부스 퇴장 시 리플릿에 도장을 찍고 받아요"},
+      {k:"jm2",b:"jm",img:"jmw",name:"재이미 팩토리 · 대형 포토카드 포토존",cond:"인증샷을 SNS에 올리면 WE포토카드 1매(100종 중 랜덤) · #재이미팩토리 #2026위페스타"},
+      {k:"jm3",b:"jm",img:"jmp",name:"재이미 팩토리 · 방문 후기 이벤트",cond:"후기를 X나 인스타그램에 올리면 3명 추첨으로 구매 특전 포토카드 35종 세트 · 11/20~11/29, 11/30 DM 발표 · #재이미팩토리 #2026위페스타 #재이미샵"},
+      {k:"wt1",b:"wt",img:"wtlogo",name:"월드투어 라이브 관 · 부스 방문 선물",cond:"WORLD TOUR LIVE 또는 WORLD DROP 로고 스티커 3종 중 랜덤 1장"},
+      {k:"wt2",b:"wt",img:"wtbar",name:"월드투어 라이브 관 · SNS 방문 인증",cond:"수화물 바코드 스티커 7종 중 랜덤 1장 · #월드드랍 #월드투어라이브 #레진 #봄툰 #2026위페스타"},
+      {k:"wt3",b:"wt",img:"wtstand",name:"월드투어 라이브 관 · 현장 응모 이벤트",cond:"응모권에 성함·이메일·받고 싶은 작품명을 써서 응모함에 넣기 · 세션별 1인 1회 · 10명 추첨으로 대형 비디오 콜 스탠드 2종 세트 · 12/1 메일 발표"},
+      {k:"lb",b:"lb",img:"card",name:"레봄 · 부스 방문 특전",cond:"살롱 드 르봉 ver.2 멤버십 카드 8종 중 랜덤 1종"},
+      {k:"lib",b:"lib",img:"bm",name:"WE 라이브러리 · 부스 방문 특전",cond:"명대사 책갈피 20종 중 마음에 드는 것 1개 선택 · 교환 독서 이벤트도 있어요"}
     ],
     note:"방문 특전은 리플릿 1매당 1회예요. 리플릿을 2매 이상 가져와도 대기 1회당 1매만 쓸 수 있어요.",
     notes:[
@@ -2134,6 +2156,23 @@ const todayStr = ()=>{ const d = new Date(); return `${d.getFullYear()}-${String
 const isDone = i => i.daily ? state.done[i.k]===todayStr() : !!state.done[i.k];
 const itemTags = i => [...new Set((i.cond||"").match(/#[^\s#,·()]+/g) || [])];
 const condNoTags = c => (c||"").replace(/\s*·?\s*(#[^\s#,·()]+\s*)+$/,"").replace(/\s*·\s*$/,"");
+const wfBooth = {};
+function shownItems(C){
+  if(!C.map) return C.items;
+  const sel = wfBooth[EV.id]||"", bs = C.map.booths;
+  if(sel) return C.items.filter(i=>i.b===sel);
+  let last=null;
+  return C.items.map(i=>{ const h = i.b!==last ? (bs.find(x=>x.id===i.b)||{}).name : ""; last=i.b; return h ? Object.assign(Object.create(i),{_h:h}) : i; });
+}
+function boothMapHTML(C){
+  const sel = wfBooth[EV.id]||"", bs=C.map.booths, B=bs.find(x=>x.id===sel);
+  return `<div class="bmap"><img src="${C.map.img}" alt="행사장 지도">` +
+    bs.map(b=>b.z.map(z=>`<button type="button" class="bspot${b.id===sel?" on":""}" data-booth="${b.id}" style="left:${z[0]}%;top:${z[1]}%;width:${z[2]}%;height:${z[3]}%" aria-label="${esc(b.name)}"></button>`).join("")).join("") +
+    `</div><p class="bhint">지도에서 부스를 누르면 그 부스 이벤트만 모아 보여요</p>` +
+    `<div class="bchips"><button type="button" class="bchip${sel?"":" on"}" data-booth="">전체</button>` +
+    bs.map(b=>`<button type="button" class="bchip${b.id===sel?" on":""}" data-booth="${b.id}">${esc(b.name)}</button>`).join("") + `</div>` +
+    `<div id="bmapList">${B ? `<h3 class="bhead">${esc(B.name)}${B.sub?` <small>${esc(B.sub)}</small>`:""}</h3>${B.info?`<div class="gnote">${esc(B.info)}</div>`:""}` : ""}</div>`;
+}
 function tagsOf(C){
   const src = [C.note||"", ...C.items.map(i=>i.cond||"")].join(" ");
   return [...new Set(src.match(/#[^\s#,·()]+/g) || [])];
@@ -2198,15 +2237,20 @@ function renderComplete(){
   }
   el.innerHTML = `<h2>${esc(C.title||"Complete 특전")}</h2><p class="gs">${esc(C.sub||"구매와 별개로 받는 특전이에요")} · 받으면 체크 (${n}/${items.length})</p>` +
     (shared ? `<div class="cbig"><img class="zoomable" loading="lazy" src="${shared}" alt="${esc(C.title||"이벤트")} 증정품"></div>` : "") +
-    items.map(i=>`<label class="grow chk"><input type="checkbox" data-k="${i.k}" ${isDone(i)?"checked":""}>
+    (C.map ? boothMapHTML(C) : "") +
+    shownItems(C).map(i=>(i._h?`<h3 class="bhead">${esc(i._h)}</h3>`:"")+`<label class="grow chk"><input type="checkbox" data-k="${i.k}" ${isDone(i)?"checked":""}>
       <span class="gimg"><img loading="lazy" src="${EV.gimg[i.img]}" alt="${esc(i.name)}"></span>
-      <span class="gmain"><span class="gname">${esc(i.name)}</span><span class="gcond">${esc(C.tagsPer ? condNoTags(i.cond) : i.cond)}</span>${C.tagsPer && itemTags(i).length ? `<span class="itags"><span class="tags2">${esc(itemTags(i).join(" "))}</span><button type="button" class="btnITags" data-k="${i.k}">복사</button></span>` : ""}</span></label>`).join("") +
+      <span class="gmain"><span class="gname">${esc(C.map ? i.name.replace(/^[^·]+·\s*/,"") : i.name)}</span><span class="gcond">${esc(C.tagsPer ? condNoTags(i.cond) : i.cond)}</span>${C.tagsPer && itemTags(i).length ? `<span class="itags"><span class="tags2">${esc(itemTags(i).join(" "))}</span><button type="button" class="btnITags" data-k="${i.k}">복사</button></span>` : ""}</span></label>`).join("") +
     (C.note ? `<div class="gnote">${esc(C.note)}</div>` : "") +
     (!C.tagsPer && tagsOf(C).length ? `<div class="tagbox"><div class="tl"><span>필수 해시태그 ${tagsOf(C).length}개</span><button type="button" id="btnTags">해시태그 복사</button></div><div class="tags2">${esc(tagsOf(C).join(" "))}</div></div>` : "") +
     (C.notes ? `<details class="gnote"><summary>이벤트 유의사항</summary><ul>${C.notes.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></details>` : "");
   if(C.collect) el.appendChild(buildCollect(C.collect));
   const bt = $("btnTags");
   if(bt) bt.onclick = ()=>copyText(tagsOf(C).join(" "), "해시태그를 복사했어요");
+  el.querySelectorAll("[data-booth]").forEach(b=>{
+    b.onclick = ()=>{ const v=b.dataset.booth; wfBooth[EV.id] = (wfBooth[EV.id]===v || v==="") ? "" : v; renderComplete();
+      if(v) $("bmapList")?.scrollIntoView({behavior:"smooth",block:"start"}); };
+  });
   el.querySelectorAll(".btnITags").forEach(b=>{
     b.onclick = e=>{ e.preventDefault(); e.stopPropagation();
       copyText(itemTags(items.find(x=>x.k===b.dataset.k)).join(" "), "해시태그를 복사했어요"); };
