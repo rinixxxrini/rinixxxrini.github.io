@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261113">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261117">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261113">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261117">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -996,6 +996,38 @@ const PZ_ITEMS = [
   {no:34,tag:"14",cat:"아크릴·키링",name:"성장 앨범 키링",sub:"55×62mm · 20매",price:15000,vars:["도우원","강서안"],limit:1,perDesign:true},
   {no:35,tag:"15",cat:"포토카드·지류",name:"포토팩",sub:"파일, 포스터, 엽서, 포토카드, 네컷포토, 렌티큘러 포토카드",price:17000},
 ];
+const DC_IMGS = {"1": "img/dc_imgs/1-e29c7363.jpg", "2": "img/dc_imgs/2-6ae1a6ae.jpg", "3": "img/dc_imgs/3-ae4ccdb4.jpg", "4": "img/dc_imgs/4-316660d4.jpg", "5": "img/dc_imgs/5-e48c5f83.jpg", "6": "img/dc_imgs/6-4507e925.jpg", "7": "img/dc_imgs/7-15dcf103.jpg", "8": "img/dc_imgs/8-2a10bc42.jpg", "11": "img/dc_imgs/11-4f2b7b52.jpg", "12": "img/dc_imgs/12-bd7c3e4c.jpg", "13": "img/dc_imgs/13-b43ba27c.jpg", "14": "img/dc_imgs/14-df25d1ca.jpg", "15": "img/dc_imgs/15-392ddc2b.jpg", "16": "img/dc_imgs/16-fd7a2ebf.jpg", "17": "img/dc_imgs/17-32ae1d84.jpg", "18": "img/dc_imgs/18-f585ef34.jpg", "19": "img/dc_imgs/19-74e9e5c1.jpg", "20": "img/dc_imgs/20-9b535415.jpg", "21": "img/dc_imgs/21-fa9ffd1b.jpg", "22": "img/dc_imgs/22-9e210925.jpg", "23": "img/dc_imgs/23-4671a6c6.jpg", "24": "img/dc_imgs/24-9f3253e6.jpg", "25": "img/dc_imgs/25-5d5b6b15.jpg", "26": "img/dc_imgs/26-3024852a.jpg"};
+const DC_GIMG = {"coaster": "img/dc_gimg/coaster-26548c27.jpg", "hbd": "img/dc_gimg/hbd-39196878.jpg", "stamp": "img/dc_gimg/stamp-adc3bc65.jpg", "seal": "img/dc_gimg/seal-fe017f58.jpg", "pc": "img/dc_gimg/pc-9f1ed8b6.jpg"};
+const DC_GUIDES = [{"title": "일정 · 예약 · 공지", "img": "img/dc_guides/info-bfc2e238.jpg"}, {"title": "콜라보 메뉴", "img": "img/dc_guides/menu-ccc3cc44.jpg"}, {"title": "MD 1", "img": "img/dc_guides/md1-ac18c6dc.jpg"}, {"title": "MD 2", "img": "img/dc_guides/md2-57f1a372.jpg"}, {"title": "스탬프 · 해시태그 이벤트", "img": "img/dc_guides/event-81d852e6.jpg"}];
+const DC_COVER = "img/dc_cover/cover-4e571b10.jpg";
+const DC_BOARD = "img/dc_guides/menu-ccc3cc44.jpg";
+const DC_CATS = ["카페 메뉴","MD"];
+const DC_ITEMS = [
+  {no:1,tag:"M1",cat:"카페 메뉴",name:"<풍기교육대> 흑임자 라테",price:7000,noElig:true},
+  {no:2,tag:"M2",cat:"카페 메뉴",name:"권세혁의 솔티 카라멜 라테",price:7000,noElig:true},
+  {no:3,tag:"M3",cat:"카페 메뉴",name:"하신성의 쌍화차",price:6500,noElig:true},
+  {no:4,tag:"M4",cat:"카페 메뉴",name:"신해범의 크림 브륄레",price:8000,noElig:true},
+  {no:5,tag:"M5",cat:"카페 메뉴",name:"정류진의 딸기 병아리 케이크",price:8000,noElig:true},
+  {no:6,tag:"M6",cat:"카페 메뉴",name:"호월루 영양 닭죽",price:8500,noElig:true},
+  {no:7,tag:"B",cat:"카페 메뉴",name:"<HBD 해범류진> 블랙 커런트 에이드",sub:"Birthday Menu · 렌티큘러 포토카드 1종 증정 · 메뉴 쿠폰 사용 불가",price:8000,noElig:true},
+  {no:8,tag:"C",cat:"카페 메뉴",name:"일러스트 쿠키 (4종)",sub:"이미지 왼쪽부터 1~4번",price:4000,vars:["1번","2번","3번","4번"],noElig:true},
+  {no:11,cat:"MD",name:"아크릴 스탠드",sub:"4종 · 이미지 왼쪽부터 1~4번",price:15000,vars:["1번","2번","3번","4번"],limit:5,perDesign:true},
+  {no:12,cat:"MD",name:"워터 글리터",price:23000,limit:5},
+  {no:13,cat:"MD",name:"수갑 카라비너 SET",sub:"수갑 카라비너, 포토카드 2종",price:19000,limit:5},
+  {no:14,cat:"MD",name:"일러스트 포토카드 (랜덤 2종)",price:3500,note:"구매 수량 제한 없음"},
+  {no:15,cat:"MD",name:"경단 인형 SET",price:24000,limit:5},
+  {no:16,cat:"MD",name:"군인 인식표 SET",sub:"인식표 2종, 포토카드 2종",price:23000,limit:5},
+  {no:17,cat:"MD",name:"렌티큘러 포토카드 SET",price:10000,limit:5},
+  {no:18,cat:"MD",name:"타겟 파일 SET",sub:"서류 봉투, 운전면허증, 프레임 투명 엽서, 일러스트 엽서 3종, 학적기록부 4종",price:16000,limit:5},
+  {no:19,cat:"MD",name:"아크릴 디오라마",sub:"아크릴 디오라마, 포토카드",price:28000,limit:5},
+  {no:20,cat:"MD",name:"SD 아크릴 키링",sub:"5종 · 이미지 위 왼쪽부터 1~5번",price:7000,vars:["1번","2번","3번","4번","5번"],limit:5,perDesign:true},
+  {no:21,cat:"MD",name:"흔들 미니 아크릴",price:13000,limit:5},
+  {no:22,cat:"MD",name:"입체 마우스 패드 SET",sub:"입체 마우스 패드, 포토카드",price:29000,limit:5},
+  {no:23,cat:"MD",name:"마스킹 테이프",price:7000,limit:5},
+  {no:24,cat:"MD",name:"바인더",price:23000,limit:5},
+  {no:25,cat:"MD",name:"캐릭터 티켓 (랜덤 1종)",price:5000,note:"구매 수량 제한 없음"},
+  {no:26,cat:"MD",name:"<풍기교육대> 패키지",sub:"타월, 금속뱃지, 신분증 2종, 포토카드 2종",price:28000,limit:5},
+];
 const SS_IMGS = {"1": "img/ss_imgs/1-59cce83e.jpg", "2": "img/ss_imgs/2-9aba2032.jpg", "3": "img/ss_imgs/3-bcfadcc4.jpg", "4": "img/ss_imgs/4-0afd920f.jpg", "5": "img/ss_imgs/5-e586728d.jpg", "6": "img/ss_imgs/6-835cab16.jpg", "7": "img/ss_imgs/7-e24e8e7e.jpg", "11": "img/ss_imgs/11-1651b670.jpg", "12": "img/ss_imgs/12-0fa0dcc1.jpg", "13": "img/ss_imgs/13-19b82807.jpg", "14": "img/ss_imgs/14-da30c936.jpg", "15": "img/ss_imgs/15-11a86fe5.jpg", "16": "img/ss_imgs/16-50c8a0e8.jpg", "17": "img/ss_imgs/17-3210d151.jpg", "18": "img/ss_imgs/18-545e0119.jpg", "19": "img/ss_imgs/19-87c1b99d.jpg", "20": "img/ss_imgs/20-0583c6e3.jpg", "21": "img/ss_imgs/21-9c231249.jpg", "22": "img/ss_imgs/22-943e6d65.jpg", "23": "img/ss_imgs/23-00a07d57.jpg"};
 const SS_GIMG = {"coaster": "img/ss_gimg/coaster-3a5f643c.jpg", "stamp": "img/ss_gimg/stamp-3fd74f4e.jpg", "seal": "img/ss_gimg/seal-5a055d1b.jpg", "pc": "img/ss_gimg/pc-a2d7374e.jpg", "postcard": "img/ss_gimg/postcard-ba976eb1.jpg", "set": "img/ss_gimg/set-31d79178.jpg"};
 const SS_GUIDES = [{"title": "일정 · 예약 · 공지", "img": "img/ss_guides/info-6bf53d35.jpg"}, {"title": "콜라보 메뉴", "img": "img/ss_guides/menu-3dd7eded.jpg"}, {"title": "MD 1", "img": "img/ss_guides/md1-07a02976.jpg"}, {"title": "MD 2", "img": "img/ss_guides/md2-99d2dcd7.jpg"}, {"title": "메뉴 스탬프 · 해시태그 이벤트", "img": "img/ss_guides/ev-2f72cd3a.jpg"}, {"title": "증정품 (GIFT)", "img": "img/ss_guides/gift-d288154b.jpg"}, {"title": "럭키 드로우 이벤트", "img": "img/ss_guides/ld-2a13849e.jpg"}];
@@ -1215,6 +1247,62 @@ const EVENTS = [{
     ]
   },
   guides:[PZ_GUIDES[0], ...PZ_GUIDES_ALL]
+},{
+  id:"dc",
+  work:"들이닥치다",
+  kw:"들이닥치다 들닥 조은 클라시나 신해범 정류진 해범류진 권세혁 하신성 풍기교육대 투니크 toonique 홍대",
+  rsv:true,
+  title:"들이닥치다 × Toonique",
+  cardSub:"카페 투니크 홍대점",
+  sub:"카페 투니크 홍대점",
+  subFull:"들이닥치다 × 투니크 콜라보 카페(홍대점) 계산기",
+  dates:"2026.11.25(수) - 2026.12.13(일)",
+  imgs:DC_IMGS, gimg:DC_GIMG,
+  menuBoard:DC_BOARD, menuCat:"카페 메뉴",
+  cover:DC_COVER,
+  hasLd:false,
+  catLabel:"구분",
+  cats:DC_CATS,
+  items:DC_ITEMS,
+  giftTitle:"증정품",
+  cartHint:"장바구니 1개 = 영수증 1건이에요. MD는 품목별 최대 5개이고, 일러스트 포토카드와 캐릭터 티켓은 제한이 없어요.",
+  gifts:[
+    {id:"coaster",cafe:true,short:"코스터",name:"코스터 (8종)",cond:"콜라보 메뉴 단품 1개당 1종 랜덤 · 쿠키는 2개 주문 시 1종 · 생일 메뉴는 제외",img:"coaster",rule:{type:"parts",parts:[{nos:[1,2,3,4,5,6]},{nos:[8],div:2}]},unit:"매"},
+    {id:"hbd",cafe:true,short:"렌티큘러 포카",name:"렌티큘러 포토카드 (생일 메뉴 특전)",cond:"<HBD 해범류진> 블랙 커런트 에이드 1잔당 1종 · 코스터 대신 주는 별도 특전",img:"hbd",rule:{type:"items",nos:[7]},unit:"장"},
+    {id:"stamp",cafe:true,short:"스탬프",name:"메뉴 스탬프",cond:"콜라보 메뉴 1개당 1개로 계산 · 실제 구매 시점에만 적립",img:"stamp",rule:{type:"items",nos:[1,2,3,4,5,6,7,8]},unit:"개"},
+    {id:"seal",cafe:true,short:"띠부띠부씰",name:"띠부띠부씰 3종 SET",cond:"스탬프 6개 적립 시 1세트 증정",img:"seal",rule:{type:"items",nos:[1,2,3,4,5,6,7,8],div:6},unit:"세트"},
+  ],
+  notes:[
+    "공지 이미지에는 MD 구매 금액 특전이 없어서 메뉴 특전(코스터·생일 메뉴 렌티큘러 포토카드·스탬프)만 계산했어요.",
+    "코스터는 콜라보 메뉴 단품 또는 쿠키 2개를 주문하면 1종 랜덤으로 줘요. <HBD 해범류진> 블랙 커런트 에이드는 코스터 대신 렌티큘러 포토카드를 따로 줘요. 코스터와 데코픽은 소진되면 증정이 끝나요.",
+    "메뉴 스탬프 6개를 모으면 띠부띠부씰 3종 SET을 줘요. 영수증이나 메뉴 쿠폰으로는 적립이 어렵고 실제 구매 시점에만 적립돼요. 스탬프 카드는 합산이나 재발급이 안 돼요. (스탬프 계산은 메뉴 1개당 1개로 했어요)",
+    "카페 테이블 이용 시 1인 1메뉴 주문이 필수예요. 모든 메뉴는 현장 상황에 따라 일시 소진될 수 있어요.",
+    "MD 최대 구매 수량은 품목별 5개예요. 일러스트 포토카드, 캐릭터 티켓, 럭키 드로우는 제한이 없어요. 대량 구매는 온라인 예약 구매를 이용하세요. (온라인 예약 오픈 11/25)",
+    "운영 시간은 오전 11시~오후 9시이고 타임별 라스트 오더는 마감 15분 전이에요. 위치는 서울 마포구 동교동 147-34 카페 투니크 홍대점이에요.",
+    "네이버 사전 예약은 11/19(목) 오후 6시 오픈이에요. 1회 예약에 본인 포함 최대 2인, 예약금 3,000원(카페 방문 시 환불), 이용 시간 105분이고 당일 예약·취소는 안 돼요. 해당 시간에 방문하지 않으면 예약금은 환불되지 않아요.",
+    "예약 가능 타임: 11:00-12:45 / 13:00-14:45 / 15:00-16:45 / 17:00-18:45 / 19:00-20:45. 본인 확인을 위해 예약자 성함과 핸드폰 번호 뒷자리가 필요해요.",
+    "11/25(수)~11/27(금)에는 네이버 사전 예약자만 카페 이용과 상품 구매를 할 수 있어요. 11/28(토)부터는 비예약자도 식음료 테이크아웃과 상품 구매가 가능하지만 메뉴·MD 결제는 예약자가 우선이에요.",
+    "카페 내부 좌석은 예약자 우선이고(1·2층 동일), 2층 야외 좌석은 비예약자도 쓸 수 있어요. (테이블·좌석 이용 시 1인 1메뉴 필수)",
+    "결제는 예약자 우선이고, 비예약자는 각 타임 오픈 30분 이후부터 결제할 수 있어요. 현장 상황에 따라 달라질 수 있어요."
+  ],
+  complete:{
+    title:"해시태그 이벤트 (일러스트 포토카드 9종)",
+    tab:"해시태그 이벤트",
+    sub:"1일 1인 1회 수령 · 하루 최대 3장 · 체크는 자정이 지나면 풀려요",
+    items:[
+      {k:"h1",daily:true,img:"pc",name:"① 웹툰 공식 플랫폼 전체 회차 소장 인증 (+1장)",cond:"<들이닥치다> 웹툰 공식 플랫폼에서 전체 회차 소장 인증 · 다운로드 내역으로만 가능하고 스크린샷으로는 참여할 수 없어요"},
+      {k:"h2",daily:true,img:"pc",name:"② MD 구매 인증 게시글 (+1장)",cond:"<들이닥치다> MD 구매 인증 게시글을 필수 해시태그와 함께 작성"},
+      {k:"h3",daily:true,img:"pc",name:"③ 메뉴 구매 인증 게시글 (+1장)",cond:"<들이닥치다> 메뉴 구매 인증 게시글을 필수 해시태그와 함께 작성"}
+    ],
+    collect:{n:9,title:"일러스트 포토카드 도감"},
+    note:"카운터에서 당일 게시글을 보여주면 포토카드를 랜덤으로 줘요. 필수 해시태그: #들이닥치다 #들닥 #콜라보카페 #조은 #클라시나 #투니크",
+    notes:[
+      "당일 인증이 끝난 영수증은 같은 날 다시 쓸 수 없고, 재발행한 영수증으로는 어떤 경우에도 참여할 수 없어요.",
+      "작품 소장 인증은 다운로드 내역으로만 가능하고 스크린샷으로는 참여할 수 없어요.",
+      "이 이벤트는 증정품이 소진되면 조기 종료돼요."
+    ]
+  },
+  guides:DC_GUIDES
 },{
   id:"ss",
   work:"솔트 소사이어티",
@@ -2058,7 +2146,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
