@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261117">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261120">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261117">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261120">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -996,6 +996,8 @@ const PZ_ITEMS = [
   {no:34,tag:"14",cat:"아크릴·키링",name:"성장 앨범 키링",sub:"55×62mm · 20매",price:15000,vars:["도우원","강서안"],limit:1,perDesign:true},
   {no:35,tag:"15",cat:"포토카드·지류",name:"포토팩",sub:"파일, 포스터, 엽서, 포토카드, 네컷포토, 렌티큘러 포토카드",price:17000},
 ];
+const PL_COVER = "img/pl_cover/cover-810077b0.jpg";
+const PL_GUIDES = [{"title": "메인 이미지", "img": "img/pl_guides/kv-3093438a.jpg"}];
 const DC_IMGS = {"1": "img/dc_imgs/1-e29c7363.jpg", "2": "img/dc_imgs/2-6ae1a6ae.jpg", "3": "img/dc_imgs/3-ae4ccdb4.jpg", "4": "img/dc_imgs/4-316660d4.jpg", "5": "img/dc_imgs/5-e48c5f83.jpg", "6": "img/dc_imgs/6-4507e925.jpg", "7": "img/dc_imgs/7-15dcf103.jpg", "8": "img/dc_imgs/8-2a10bc42.jpg", "11": "img/dc_imgs/11-4f2b7b52.jpg", "12": "img/dc_imgs/12-bd7c3e4c.jpg", "13": "img/dc_imgs/13-b43ba27c.jpg", "14": "img/dc_imgs/14-df25d1ca.jpg", "15": "img/dc_imgs/15-392ddc2b.jpg", "16": "img/dc_imgs/16-fd7a2ebf.jpg", "17": "img/dc_imgs/17-32ae1d84.jpg", "18": "img/dc_imgs/18-f585ef34.jpg", "19": "img/dc_imgs/19-74e9e5c1.jpg", "20": "img/dc_imgs/20-9b535415.jpg", "21": "img/dc_imgs/21-fa9ffd1b.jpg", "22": "img/dc_imgs/22-9e210925.jpg", "23": "img/dc_imgs/23-4671a6c6.jpg", "24": "img/dc_imgs/24-9f3253e6.jpg", "25": "img/dc_imgs/25-5d5b6b15.jpg", "26": "img/dc_imgs/26-3024852a.jpg", "27": "img/dc_imgs/27-43f1c079.jpg"};
 const DC_GIMG = {"coaster": "img/dc_gimg/coaster-26548c27.jpg", "hbd": "img/dc_gimg/hbd-39196878.jpg", "stamp": "img/dc_gimg/stamp-adc3bc65.jpg", "seal": "img/dc_gimg/seal-fe017f58.jpg", "pc": "img/dc_gimg/pc-9f1ed8b6.jpg", "postcard": "img/dc_gimg/postcard-2d1ee90a.jpg", "set": "img/dc_gimg/set-39055cbc.jpg"};
 const DC_GUIDES = [{"title": "일정 · 예약 · 공지", "img": "img/dc_guides/info-bfc2e238.jpg"}, {"title": "콜라보 메뉴", "img": "img/dc_guides/menu-ccc3cc44.jpg"}, {"title": "MD 1", "img": "img/dc_guides/md1-ac18c6dc.jpg"}, {"title": "MD 2", "img": "img/dc_guides/md2-57f1a372.jpg"}, {"title": "스탬프 · 해시태그 이벤트", "img": "img/dc_guides/event-81d852e6.jpg"}, {"title": "증정품 (GIFT)", "img": "img/dc_guides/gift-c8b1aec4.jpg"}, {"title": "럭키 드로우 이벤트", "img": "img/dc_guides/ld-7df982e7.jpg"}];
@@ -1248,6 +1250,27 @@ const EVENTS = [{
     ]
   },
   guides:[PZ_GUIDES[0], ...PZ_GUIDES_ALL]
+},{
+  id:"pl",
+  work:"플레이어로 살아남는 방법",
+  kw:"플레이어로 살아남는 방법 플레이어로살아남는방법 플살방 플살 플레이어 삼백 샴록 해담이엔티 비온 아넥스 비온아넥스 비온카페 be on annex beon",
+  title:"플레이어로 살아남는 방법 × Be On ANNEX",
+  cardSub:"비온 아넥스 (마포구 동교로25길)",
+  sub:"비온 아넥스",
+  subFull:"플레이어로 살아남는 방법 × 비온 아넥스 콜라보 카페 계산기",
+  dates:"2026.11.27(금) - 2026.12.27(일)",
+  imgs:{}, gimg:{},
+  cover:PL_COVER,
+  catLabel:"구분",
+  cats:[],
+  items:[],
+  giftTitle:"특전",
+  gifts:[],
+  notes:[
+    "메뉴, MD, 이벤트, 특전은 추후 공개 예정이에요.",
+    "운영 기간은 2026.11.27(금)~12.27(일)이고, 장소는 비온 아넥스예요."
+  ],
+  guides:PL_GUIDES
 },{
   id:"dc",
   work:"들이닥치다",
@@ -2152,7 +2175,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"pl"},{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
