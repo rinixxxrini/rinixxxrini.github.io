@@ -997,7 +997,38 @@ const PZ_ITEMS = [
   {no:35,tag:"15",cat:"포토카드·지류",name:"포토팩",sub:"파일, 포스터, 엽서, 포토카드, 네컷포토, 렌티큘러 포토카드",price:17000},
 ];
 const PL_COVER = "img/pl_cover/cover-810077b0.jpg";
-const PL_GUIDES = [{"title": "메인 이미지", "img": "img/pl_guides/kv-3093438a.jpg"}];
+const PL_IMGS = {"1": "img/pl_imgs/1-740b688d.jpg", "2": "img/pl_imgs/2-ac8dda79.jpg", "3": "img/pl_imgs/3-7f7a1f38.jpg", "4": "img/pl_imgs/4-bd7bf479.jpg", "5": "img/pl_imgs/5-b17ed1e6.jpg", "6": "img/pl_imgs/6-901393cb.jpg", "7": "img/pl_imgs/7-bafe4613.jpg", "8": "img/pl_imgs/8-dfb8818d.jpg", "9": "img/pl_imgs/9-33f6c7bf.jpg", "10": "img/pl_imgs/10-4ef2654a.jpg", "11": "img/pl_imgs/11-82b5e652.jpg", "12": "img/pl_imgs/12-937864ee.jpg", "21": "img/pl_imgs/21-b328cac7.jpg", "22": "img/pl_imgs/22-b4b82106.jpg", "23": "img/pl_imgs/23-25ec5869.jpg", "24": "img/pl_imgs/24-d9dbe72c.jpg", "25": "img/pl_imgs/25-e6e258ed.jpg", "26": "img/pl_imgs/26-fb2bdbe2.jpg", "27": "img/pl_imgs/27-7cbbba8c.jpg", "28": "img/pl_imgs/28-a4e65366.jpg", "29": "img/pl_imgs/29-384d217f.jpg", "30": "img/pl_imgs/30-f665032f.jpg", "31": "img/pl_imgs/31-cd46b1d3.jpg", "32": "img/pl_imgs/32-2fe25643.jpg", "33": "img/pl_imgs/33-7282055d.jpg"};
+const PL_GIMG = {"set1": "img/pl_gimg/set1-31af1fda.jpg", "set2": "img/pl_gimg/set2-21e8bdbf.jpg", "coaster": "img/pl_gimg/coaster-28a7d321.jpg", "set3": "img/pl_gimg/set3-67aaa804.jpg", "card": "img/pl_gimg/card-b2b1f3b3.jpg", "pc": "img/pl_gimg/pc-34c77b94.jpg"};
+const PL_BOARD = "img/pl_guides/menu-674a97e1.jpg";
+const PL_GUIDES = [{"title": "메뉴", "img": "img/pl_guides/menu-674a97e1.jpg"}, {"title": "굿즈 1", "img": "img/pl_guides/md1-d1b892f5.jpg"}, {"title": "굿즈 2", "img": "img/pl_guides/md2-dc9138ea.jpg"}, {"title": "특전", "img": "img/pl_guides/gift-c4ce1fd9.jpg"}, {"title": "SNS 이벤트", "img": "img/pl_guides/sns-9af43ef6.jpg"}, {"title": "메인 이미지", "img": "img/pl_guides/kv-3093438a.jpg"}];
+const PL_CATS = ["카페 메뉴","아크릴","지류","잡화"];
+const PL_ITEMS = [
+  {no:1,tag:"D1",cat:"카페 메뉴",name:"비온 스페셜티",sub:"티 6종 중 선택",price:6000,vars:["수국유자차","스위트 라벤더","캐모마일","히비스커스 블라썸","페퍼민트","마리골드 블라썸"],noElig:true},
+  {no:2,tag:"D2",cat:"카페 메뉴",name:"아메리카노",price:6000,noElig:true},
+  {no:3,tag:"D3",cat:"카페 메뉴",name:"블루레몬에이드",price:7000,noElig:true},
+  {no:4,tag:"D4",cat:"카페 메뉴",name:"아몬드라떼",price:7000,noElig:true},
+  {no:5,tag:"D5",cat:"카페 메뉴",name:"다크 딥 초코",price:7000,noElig:true},
+  {no:6,tag:"D6",cat:"카페 메뉴",name:"피스타치오 카페라떼",price:7000,noElig:true},
+  {no:7,tag:"D7",cat:"카페 메뉴",name:"귤차/귤주스",price:7000,vars:["귤차","귤주스"],noElig:true},
+  {no:8,tag:"D8",cat:"카페 메뉴",name:"무알콜 뱅쇼",price:7000,noElig:true},
+  {no:9,tag:"S1",cat:"카페 메뉴",name:"모둠 쿠키",sub:"디저트",price:8000,noElig:true},
+  {no:10,tag:"S2",cat:"카페 메뉴",name:"다쿠아즈 초코크림롤",sub:"디저트",price:8000,noElig:true},
+  {no:11,tag:"S3",cat:"카페 메뉴",name:"라즈베리 타르트",sub:"디저트",price:8000,noElig:true},
+  {no:12,tag:"S4",cat:"카페 메뉴",name:"토마토 파스타",sub:"디저트",price:9000,noElig:true},
+  {no:21,cat:"아크릴",name:"흔들 날개 아크릴 스탠드",price:29000},
+  {no:22,cat:"지류",name:"포토카드 3P",sub:"랜덤",price:4500},
+  {no:23,cat:"아크릴",name:"자석 레이어 아크릴 블록",price:21000,vars:["1번","2번"]},
+  {no:24,cat:"지류",name:"필름 세트",price:7000},
+  {no:25,cat:"아크릴",name:"아크릴 슬라이드 키링",price:9000},
+  {no:26,cat:"지류",name:"바인더북+포토카드",price:24000},
+  {no:27,cat:"아크릴",name:"개굴씨 회전 그립톡",price:12000},
+  {no:28,cat:"잡화",name:"시리얼볼",price:21000},
+  {no:29,cat:"잡화",name:"반소매 티셔츠",sub:"포토카드 포함 · 사이즈 XXL",price:30000},
+  {no:30,cat:"아크릴",name:"포토프롭 세트",price:21000},
+  {no:31,cat:"아크릴",name:"개굴씨 아크릴 쉐이커 키링",price:12000},
+  {no:32,cat:"아크릴",name:"개굴씨 아크릴 집게",price:7000},
+  {no:33,cat:"지류",name:"개굴씨 떡메모지",price:5000},
+];
 const DC_IMGS = {"1": "img/dc_imgs/1-e29c7363.jpg", "2": "img/dc_imgs/2-6ae1a6ae.jpg", "3": "img/dc_imgs/3-ae4ccdb4.jpg", "4": "img/dc_imgs/4-316660d4.jpg", "5": "img/dc_imgs/5-e48c5f83.jpg", "6": "img/dc_imgs/6-4507e925.jpg", "7": "img/dc_imgs/7-15dcf103.jpg", "8": "img/dc_imgs/8-2a10bc42.jpg", "11": "img/dc_imgs/11-4f2b7b52.jpg", "12": "img/dc_imgs/12-bd7c3e4c.jpg", "13": "img/dc_imgs/13-b43ba27c.jpg", "14": "img/dc_imgs/14-df25d1ca.jpg", "15": "img/dc_imgs/15-392ddc2b.jpg", "16": "img/dc_imgs/16-fd7a2ebf.jpg", "17": "img/dc_imgs/17-32ae1d84.jpg", "18": "img/dc_imgs/18-f585ef34.jpg", "19": "img/dc_imgs/19-74e9e5c1.jpg", "20": "img/dc_imgs/20-9b535415.jpg", "21": "img/dc_imgs/21-fa9ffd1b.jpg", "22": "img/dc_imgs/22-9e210925.jpg", "23": "img/dc_imgs/23-4671a6c6.jpg", "24": "img/dc_imgs/24-9f3253e6.jpg", "25": "img/dc_imgs/25-5d5b6b15.jpg", "26": "img/dc_imgs/26-3024852a.jpg", "27": "img/dc_imgs/27-43f1c079.jpg"};
 const DC_GIMG = {"coaster": "img/dc_gimg/coaster-26548c27.jpg", "hbd": "img/dc_gimg/hbd-39196878.jpg", "stamp": "img/dc_gimg/stamp-adc3bc65.jpg", "seal": "img/dc_gimg/seal-fe017f58.jpg", "pc": "img/dc_gimg/pc-9f1ed8b6.jpg", "postcard": "img/dc_gimg/postcard-2d1ee90a.jpg", "set": "img/dc_gimg/set-39055cbc.jpg"};
 const DC_GUIDES = [{"title": "일정 · 예약 · 공지", "img": "img/dc_guides/info-bfc2e238.jpg"}, {"title": "콜라보 메뉴", "img": "img/dc_guides/menu-ccc3cc44.jpg"}, {"title": "MD 1", "img": "img/dc_guides/md1-ac18c6dc.jpg"}, {"title": "MD 2", "img": "img/dc_guides/md2-57f1a372.jpg"}, {"title": "스탬프 · 해시태그 이벤트", "img": "img/dc_guides/event-81d852e6.jpg"}, {"title": "증정품 (GIFT)", "img": "img/dc_guides/gift-c8b1aec4.jpg"}, {"title": "럭키 드로우 이벤트", "img": "img/dc_guides/ld-7df982e7.jpg"}];
@@ -1250,28 +1281,39 @@ const EVENTS = [{
     ]
   },
   guides:[PZ_GUIDES[0], ...PZ_GUIDES_ALL]
-},{
-  id:"pl",
-  work:"플레이어로 살아남는 방법",
-  kw:"플레이어로 살아남는 방법 플레이어로살아남는방법 플살방 플살 플레이어 삼백 샴록 해담이엔티 비온 아넥스 비온아넥스 비온카페 be on annex beon",
-  title:"플레이어로 살아남는 방법 × Be On ANNEX",
-  cardSub:"비온 아넥스 (마포구 동교로25길)",
-  sub:"비온 아넥스",
-  subFull:"플레이어로 살아남는 방법 × 비온 아넥스 콜라보 카페 계산기",
-  dates:"2026.11.27(금) - 2026.12.27(일)",
-  imgs:{}, gimg:{},
-  cover:PL_COVER,
-  catLabel:"구분",
-  cats:[],
-  items:[],
-  giftTitle:"특전",
-  gifts:[],
-  notes:[
-    "메뉴, MD, 이벤트, 특전은 추후 공개 예정이에요.",
-    "운영 기간은 2026.11.27(금)~12.27(일)이고, 장소는 비온 아넥스예요."
+},{id:"pl",work:"플레이어로 살아남는 방법",kw:"플레이어로 살아남는 방법 플레이어로살아남는방법 플살방 플살 플레이어 삼백 샴록 해담이엔티 개굴씨 비온 아넥스 비온아넥스 비온카페 be on annex beon",
+  title:"플레이어로 살아남는 방법 × Be On ANNEX",cardSub:"비온 아넥스 (마포구 동교로25길)",sub:"비온 아넥스",
+  subFull:"플레이어로 살아남는 방법 × 비온 아넥스 콜라보 카페 계산기",dates:"2026.11.27(금) - 2026.12.27(일)",
+  imgs:PL_IMGS, gimg:PL_GIMG, menuBoard:PL_BOARD, menuCat:"카페 메뉴", cover:PL_COVER, hasLd:false,
+  catLabel:"구분", cats:PL_CATS, items:PL_ITEMS,
+  giftTitle:"굿즈 특전", cafeGiftTitle:"메뉴 특전",
+  cartHint:"장바구니 1개 = 결제(영수증) 1건으로 계산했어요. 굿즈 특전은 굿즈 금액 기준이에요. 구매 제한은 현장 상황에 따라 생길 수 있어요.",
+  gifts:[
+    {id:"set1",short:"엽서+스티커",name:"일러스트 엽서 5종 / 도무송 스티커 10종",cond:"굿즈 1만원 이상 구매 시 랜덤 1세트",img:"set1",rule:{type:"min",amount:10000},unit:"세트"},
+    {id:"set2",short:"포스터+포카",name:"포스터 3종 / 포토카드 3종",cond:"굿즈 5만원 이상 구매 시 랜덤 1세트",img:"set2",rule:{type:"min",amount:50000},unit:"세트"},
+    {id:"card",cafe:true,short:"서현 카드",name:"서현 카드",cond:"음료 구매 시 종류 상관없이 증정 (음료 1잔당 1장으로 계산 · 소진 시 종료)",img:"card",rule:{type:"items",nos:[1,2,3,4,5,6,7,8]},unit:"장"},
+    {id:"coaster",cafe:true,short:"사각 코스터",name:"사각 코스터 (10종)",cond:"음료 혹은 디저트 구매 시 랜덤 1종 (메뉴 1개당 1장으로 계산)",img:"coaster",rule:{type:"items",nos:[1,2,3,4,5,6,7,8,9,10,11,12]},unit:"장"},
+    {id:"set3",cafe:true,short:"포스터+캔뱃지",name:"일러스트 포스터 4종 / 캔뱃지 4종",cond:"음료+디저트 세트 구매 시 랜덤 1세트 (음료 1개 + 디저트 1개마다 1세트로 계산)",img:"set3",rule:{type:"pairs",a:[1,2,3,4,5,6,7,8],b:[9,10,11,12]},unit:"세트"},
   ],
-  guides:PL_GUIDES
-},{
+  notes:[
+    "장소는 비온 아넥스(Be On ANNEX)이고, 운영 기간은 2026.11.27(금)~12.27(일)이에요. 운영 소식은 트위터 @cafebeon, 인스타그램 @beoncafe.official에서 확인할 수 있어요.",
+    "굿즈 특전: 1만원 이상이면 일러스트 엽서/도무송 스티커 랜덤 1세트, 5만원 이상이면 포스터/포토카드 랜덤 1세트예요. 결제 1건 기준으로 계산했어요.",
+    "메뉴 특전: 음료를 사면 종류 상관없이 서현 카드(소진 시 종료), 음료나 디저트를 사면 사각 코스터 랜덤 1종, 음료+디저트 세트로 사면 일러스트 포스터/캔뱃지 랜덤 1세트예요. 메뉴 1개당 코스터 1장, 음료 1개+디저트 1개마다 세트 1개로 계산했어요. 현장 기준과 다르면 알려 주세요.",
+    "모든 제품은 재고가 소진되면 판매가 끝나요. 현장 상황에 따라 구매 제한이 생길 수 있어요.",
+    "제품 이미지는 실물과 다를 수 있어요. 인쇄 과정에서 생긴 미세한 흠집이나 점은 교환·환불 대상이 아니에요."
+  ],
+  complete:{
+    title:"SNS 이벤트 · 포토카드 10종",
+    sub:"받았으면 체크",
+    items:[
+      {k:"e1",img:"pc",name:"굿즈 구매 인증 게시글 업로드 · 포토카드 +1종",cond:"필수 해시태그와 함께 굿즈 구매 인증 게시글 업로드"},
+      {k:"e2",img:"pc",name:"이벤트 메뉴 구매 인증 게시글 업로드 · 포토카드 +1종",cond:"필수 해시태그와 함께 이벤트 메뉴 구매 인증 게시글 업로드"},
+      {k:"e3",img:"pc",name:"작품 소장 인증 · 포토카드 +1종",cond:"작품 소장 인증"}
+    ],
+    collect:{n:10,title:"포토카드 도감"},
+    note:"필수 해시태그: #삼백 #샴록 #플레이어로살아남는방법 #비온아넥스 #비온카페 #인증이벤트 · 비온아넥스 계정 팔로우 확인 후 증정 (트위터 @cafebeon · 인스타그램 @beoncafe.official)"
+  },
+  guides:PL_GUIDES},{
   id:"dc",
   work:"들이닥치다",
   kw:"들이닥치다 들닥 조은 클라시나 신해범 정류진 해범류진 권세혁 하신성 풍기교육대 투니크 toonique 홍대",
