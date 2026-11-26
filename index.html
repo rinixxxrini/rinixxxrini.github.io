@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126b">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126c">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126b">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126c">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -1022,6 +1022,52 @@ const XM_ITEMS = [
   {no:20,cat:"레봄 ONLY",name:"레봄 필름 인화사진",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["권태주의보", "뼈와 꽃잎", "어그러진 혼", "힛 미 하드", "1995 청춘 레포트", "낙인의 세계", "논제로섬", "환장의 가이딩"]},
   {no:21,cat:"레봄 ONLY",name:"레봄 조각 스티커",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["권태주의보", "뼈와 꽃잎", "어그러진 혼", "힛 미 하드", "1995 청춘 레포트", "낙인의 세계", "논제로섬", "환장의 가이딩"]},
 ];
+const MN_IMGS = {"1": "img/mn_imgs/1-3345fe87.jpg", "2": "img/mn_imgs/2-be3e555f.jpg", "3": "img/mn_imgs/3-55d494fd.jpg", "4": "img/mn_imgs/4-1405b80e.jpg", "5": "img/mn_imgs/5-426ad69b.jpg", "6": "img/mn_imgs/6-8204978d.jpg", "7": "img/mn_imgs/7-ae25e950.jpg", "8": "img/mn_imgs/8-22bbfbc3.jpg", "9": "img/mn_imgs/9-f9aab1a9.jpg", "10": "img/mn_imgs/10-997f7be1.jpg", "11": "img/mn_imgs/11-b6799a66.jpg", "12": "img/mn_imgs/12-4a25b5a1.jpg", "13": "img/mn_imgs/13-dc8023e6.jpg", "14": "img/mn_imgs/14-009a2d38.jpg", "15": "img/mn_imgs/15-5a6ab786.jpg", "16": "img/mn_imgs/16-16ce3f10.jpg", "17": "img/mn_imgs/17-b1b3e3a7.jpg", "18": "img/mn_imgs/18-6d51fbcb.jpg", "19": "img/mn_imgs/19-d841e506.jpg", "31": "img/mn_imgs/31-9d30dcb4.jpg", "32": "img/mn_imgs/32-1cb9f551.jpg", "33": "img/mn_imgs/33-789dee9b.jpg", "34": "img/mn_imgs/34-5e431639.jpg", "35": "img/mn_imgs/35-a63f6ca5.jpg", "36": "img/mn_imgs/36-3d5f6f68.jpg", "37": "img/mn_imgs/37-a71d2b34.jpg", "38": "img/mn_imgs/38-d1e569e9.jpg", "39": "img/mn_imgs/39-363d4ea6.jpg", "51": "img/mn_imgs/51-7a5c6ceb.jpg", "52": "img/mn_imgs/52-15f30a92.jpg", "53": "img/mn_imgs/53-23fc950e.jpg", "54": "img/mn_imgs/54-f1462a40.jpg", "55": "img/mn_imgs/55-2e61194a.jpg", "56": "img/mn_imgs/56-a36f2f58.jpg", "57": "img/mn_imgs/57-30d50a8a.jpg", "58": "img/mn_imgs/58-1360128a.jpg", "59": "img/mn_imgs/59-cd036a5a.jpg"};
+const MN_GIMG = {"postcard": "img/mn_gimg/postcard-dc7e3b83.jpg", "poster": "img/mn_gimg/poster-506a2cef.jpg", "coasterd": "img/mn_gimg/coasterd-dac6eceb.jpg", "coastern": "img/mn_gimg/coastern-4e732940.jpg", "welcome": "img/mn_gimg/welcome-4e3d5019.jpg", "stampcard": "img/mn_gimg/stampcard-b3c7df9e.jpg", "stamppc": "img/mn_gimg/stamppc-f1854940.jpg", "sticker": "img/mn_gimg/sticker-2b2df4d3.jpg", "rsv": "img/mn_gimg/rsv-f76c283e.jpg"};
+const MN_COVER = "img/mn_cover/cover-60c1be43.jpg";
+const MN_DAY = ["img/mn_guides/day1-20afeed2.jpg", "img/mn_guides/day2-11fbbde3.jpg"];
+const MN_NIGHT = ["img/mn_guides/night1-a3a2014a.jpg", "img/mn_guides/night2-780a4aba.jpg"];
+const MN_GUIDES = [{"title": "행사 포스터", "img": "img/mn_guides/poster-5edf3b22.jpg"}, {"title": "MD LIST 1", "img": "img/mn_guides/md1-b79b0dfd.jpg"}, {"title": "MD LIST 2", "img": "img/mn_guides/md2-ff512a4f.jpg"}, {"title": "MD LIST 3", "img": "img/mn_guides/md3-8b8cf638.jpg"}, {"title": "MD LIST 4", "img": "img/mn_guides/md4-6e9f5c4d.jpg"}, {"title": "MD 특전", "img": "img/mn_guides/gift-83439db5.jpg"}, {"title": "주간 메뉴 1", "img": "img/mn_guides/day1-20afeed2.jpg"}, {"title": "주간 메뉴 2", "img": "img/mn_guides/day2-11fbbde3.jpg"}, {"title": "야간 메뉴 「밤부포차」 1", "img": "img/mn_guides/night1-a3a2014a.jpg"}, {"title": "야간 메뉴 「밤부포차」 2", "img": "img/mn_guides/night2-780a4aba.jpg"}, {"title": "스탬프 미션", "img": "img/mn_guides/stamp-c2e37f7d.jpg"}, {"title": "예약자 포토카드", "img": "img/mn_guides/rsv-ae7abb26.jpg"}, {"title": "예약 안내", "img": "img/mn_guides/time-e8248ac3.jpg"}];
+const MN_CATS = ["주간 메뉴","야간 메뉴","아크릴","포토카드·지류","키링·잡화","인형·의류"];
+const MN_ITEMS = [
+  {no:1,cat:"아크릴",name:"듀얼 북엔드 아크릴 스탠드",sub:"희재 49×149mm / 우진 48×147mm / 배경 50×158mm / 바닥1 53×50mm / 바닥2 50×50mm",price:29000},
+  {no:2,cat:"포토카드·지류",name:"시리즈 포토카드 (랜덤 3종)",sub:"포토카드 총 30종 중 랜덤 3종 · 55×85mm",price:4500},
+  {no:3,cat:"포토카드·지류",name:"밤부 포토카드 확정팩 - 보드게임 에디션",sub:"확정팩 포토카드 30종 + 스페셜 포토카드 1종 · 게임종 Ø60×45mm",price:53000},
+  {no:4,cat:"포토카드·지류",name:"꾸금 포토카드 (랜덤 3종)",sub:"포토카드 총 20종 중 랜덤 3종 · 55×85mm",price:4000,note:"19세 미만 구매 불가 · 결제 시 신분증 확인"},
+  {no:5,cat:"포토카드·지류",name:"꾸금 포카 12팩 + 렌티큘러 패키지",sub:"렌티큘러 포토카드 3종 중 1종 랜덤 · 55×85mm",price:50000,note:"19세 미만 구매 불가 · 결제 시 신분증 확인"},
+  {no:6,cat:"키링·잡화",name:"희재 착붙 자석 커플 키링 세트",sub:"희재 36×52mm / 우진 33×52mm · 포토카드 55×85mm",price:20000},
+  {no:7,cat:"키링·잡화",name:"자기양❤ 커플 머그컵 세트",sub:"희재·우진 도자기 머그컵 2종 Ø80×95mm + 스티커 2종 60×46mm",price:32000},
+  {no:8,cat:"포토카드·지류",name:"희재·우진 신분 세트",sub:"신분증 54×86mm / 증사 150×100mm / 명함 90×50mm",price:13000,vars:["희재","우진"]},
+  {no:9,cat:"아크릴",name:"밤부 아크릴 무드등",sub:"아크릴 무드등 100×160mm · 포카 2종 55×85mm",price:30000},
+  {no:10,cat:"아크릴",name:"랜덤 아크릴 히퍼 (8종)",sub:"8종 중 랜덤 1종 · 약 30×50mm · 접착 스티커 동봉 · 디자인별 사이즈 상이",price:6000},
+  {no:11,cat:"아크릴",name:"희재/우진 캐릭터 옷걸이",sub:"희재 390×466mm / 우진 390×465mm",price:16000,vars:["희재","우진"]},
+  {no:12,cat:"아크릴",name:"목욕탕 아크릴 코스터",sub:"희재 30×55mm / 백상무 90×64mm / 민박이 55×27mm / 바닥 Ø105mm",price:20000},
+  {no:13,cat:"키링·잡화",name:"나폴레옹 마그넷 세트",sub:"메모 패드 80×106mm · 마그넷 29×55mm",price:11000},
+  {no:14,cat:"포토카드·지류",name:"엽서 세트",sub:"렌티큘러 엽서 1종 + 스페셜 엽서 4종 · 100×150mm",price:12000},
+  {no:15,cat:"포토카드·지류",name:"바인더 세트",sub:"바인더 270×310×60mm · 내지 15매 (9포켓 6 + 4포켓 5 + 6포켓 2 + A4 2) · 투명 포토카드 2종",price:27000},
+  {no:16,cat:"키링·잡화",name:"따뜻한 밤 핫팩 파우치 세트",sub:"파우치 140×130mm · 포토카드 55×85mm",price:11000},
+  {no:17,cat:"인형·의류",name:"인형 키링",sub:"희재 62.5×112mm / 우진 62.5×100mm",price:27000,vars:["희재","우진"],preorder:true,note:"예약판매 상품 · 제작 과정에 따라 실제 상품과 차이가 있을 수 있어요"},
+  {no:18,cat:"인형·의류",name:"수면 안대",sub:"희재 180×126mm / 우진 180×110mm",price:15000,vars:["희재","우진"],preorder:true,note:"예약판매 상품 · 제작 과정에 따라 실제 상품과 차이가 있을 수 있어요"},
+  {no:19,cat:"인형·의류",name:"희재의 일방적 커플 잠옷",sub:"상의 어깨 53 / 가슴 64 / 총장 74cm · 하의 허리 36 / 밑단 25.5 / 총장 99cm",price:78000,preorder:true,note:"예약판매 상품 · 제작 과정에 따라 실제 상품과 차이가 있을 수 있어요"},
+  {no:31,tag:"D1",cat:"주간 메뉴",name:"빅멕 세트",sub:"재택근무 조폭의 최애 식사 · 햄버거 + 콜라 + 포카1 + 클리어 포카1 + 디저트 픽 · 코스터 2종",price:16000,noElig:true},
+  {no:32,tag:"D2",cat:"주간 메뉴",name:"아메리카노",sub:"자기양.모닝커피 왔어요~",price:6500,noElig:true},
+  {no:33,tag:"D3",cat:"주간 메뉴",name:"귤홍차",sub:"에아으세요? 어으신",price:7000,noElig:true},
+  {no:34,tag:"D4",cat:"주간 메뉴",name:"블루베리 에이드",sub:"우리들의 부드러운 밤",price:7000,noElig:true},
+  {no:35,tag:"D5",cat:"주간 메뉴",name:"딸기 크림 라떼",sub:"우리희재 착하니까 주는 상",price:7000,noElig:true},
+  {no:36,tag:"D6",cat:"주간 메뉴",name:"사과 팬케이크",sub:"안썰어본 게 없는 현란한 칼솜씨로",price:8000,noElig:true},
+  {no:37,tag:"D7",cat:"주간 메뉴",name:"몽블랑 (MONT BLANC)",sub:"나폴레옹이 알려준 프랑스식 ‘부드러운 밤’",price:9000,noElig:true},
+  {no:38,tag:"D8",cat:"주간 메뉴",name:"귤 요거트",sub:"귤 까주며 피어난 희재의 망상",price:7000,noElig:true},
+  {no:39,tag:"D9",cat:"주간 메뉴",name:"희재·우진 쿠키",price:3000,vars:["희재","우진"],noElig:true},
+  {no:51,tag:"N1",cat:"야간 메뉴",name:"떡볶이 세트",sub:"진도 빼기에 진심인 희재의 기특한 야식 준비 · 떡볶이(반숙란) + 김말이 + 핫바 1개 + 양면포카 2매 · 코스터 2종",price:17000,noElig:true},
+  {no:52,tag:"N2",cat:"야간 메뉴",name:"복분자 하이볼",sub:"이건 술이 아니라 약인디",price:12000,noElig:true},
+  {no:53,tag:"N3",cat:"야간 메뉴",name:"딸기 막걸리",sub:"시골 할매랑 술내기를 하겠다고?",price:9000,noElig:true},
+  {no:54,tag:"N4",cat:"야간 메뉴",name:"선우,진 토닉",sub:"우진이 아니라 선우 진입니다.",price:14000,noElig:true},
+  {no:55,tag:"N5",cat:"야간 메뉴",name:"무알콜 맥주",sub:"과도한 음주는 간 손상과… 그래서 준비했습니다.",price:8000,noElig:true},
+  {no:56,tag:"N6",cat:"야간 메뉴",name:"보드게임 단짝, 마른안주",sub:"조폭이랑 보드게임, 젠장, 재밌어.",price:12000,noElig:true},
+  {no:57,tag:"N7",cat:"야간 메뉴",name:"오돌뼈 주먹밥",sub:"오독오독 씹는 맛, 딱 우진의 취향",price:14000,noElig:true},
+  {no:58,tag:"N8",cat:"야간 메뉴",name:"콘치즈 크래커",sub:"알콘달콘, 바삭쫀득 우리 사이",price:10000,noElig:true},
+  {no:59,tag:"N9",cat:"야간 메뉴",name:"희재·우진 쿠키 (야간)",price:3000,vars:["희재","우진"],noElig:true},
+];
 const PL_COVER = "img/pl_cover/cover-810077b0.jpg";
 const PL_IMGS = {"1": "img/pl_imgs/1-740b688d.jpg", "2": "img/pl_imgs/2-ac8dda79.jpg", "3": "img/pl_imgs/3-7f7a1f38.jpg", "4": "img/pl_imgs/4-bd7bf479.jpg", "5": "img/pl_imgs/5-b17ed1e6.jpg", "6": "img/pl_imgs/6-901393cb.jpg", "7": "img/pl_imgs/7-bafe4613.jpg", "8": "img/pl_imgs/8-dfb8818d.jpg", "9": "img/pl_imgs/9-33f6c7bf.jpg", "10": "img/pl_imgs/10-4ef2654a.jpg", "11": "img/pl_imgs/11-82b5e652.jpg", "12": "img/pl_imgs/12-937864ee.jpg", "21": "img/pl_imgs/21-b328cac7.jpg", "22": "img/pl_imgs/22-b4b82106.jpg", "23": "img/pl_imgs/23-25ec5869.jpg", "24": "img/pl_imgs/24-d9dbe72c.jpg", "25": "img/pl_imgs/25-e6e258ed.jpg", "26": "img/pl_imgs/26-fb2bdbe2.jpg", "27": "img/pl_imgs/27-7cbbba8c.jpg", "28": "img/pl_imgs/28-a4e65366.jpg", "29": "img/pl_imgs/29-384d217f.jpg", "30": "img/pl_imgs/30-f665032f.jpg", "31": "img/pl_imgs/31-cd46b1d3.jpg", "32": "img/pl_imgs/32-2fe25643.jpg", "33": "img/pl_imgs/33-7282055d.jpg"};
 const PL_GIMG = {"set1": "img/pl_gimg/set1-31af1fda.jpg", "set2": "img/pl_gimg/set2-21e8bdbf.jpg", "coaster": "img/pl_gimg/coaster-28a7d321.jpg", "set3": "img/pl_gimg/set3-67aaa804.jpg", "card": "img/pl_gimg/card-b2b1f3b3.jpg", "pc": "img/pl_gimg/pc-34c77b94.jpg"};
@@ -1307,6 +1353,75 @@ const EVENTS = [{
     ]
   },
   guides:[PZ_GUIDES[0], ...PZ_GUIDES_ALL]
+},{
+  id:"mn",
+  work:"밤은 부드러워라",
+  kw:"밤은 부드러워라 밤은부드러워라 밤부 밤부포차 moonlighting 희재 우진 고희재 선우진 정현 판타지트 fantazit",
+  rsv:true,
+  title:"밤은 부드러워라 × 판타지트",
+  cardSub:"판타지트 (마포구 월드컵로 10길) · 야간 「밤부포차」",
+  sub:"밤은 부드러워라 콜라보 카페 · 판타지트",
+  subFull:"밤은 부드러워라 판타지트 콜라보 카페 계산기",
+  dates:"2026.12.3(목) - 2027.1.3(일)",
+  imgs:MN_IMGS, gimg:MN_GIMG,
+  menuBoard:MN_DAY[0], menuCat:"카페 메뉴", cafeTab:"카페 메뉴",
+  menus:[
+    {cat:"주간 메뉴",boards:MN_DAY,sub:"매일 11:00부터 · 월~목·일 11:00~20:20 (총 5타임)"},
+    {cat:"야간 메뉴",boards:MN_NIGHT,sub:"금·토 17:00(4타임)부터 · 「밤부포차」 야간파티 (~22:20)"}
+  ],
+  cover:MN_COVER,
+  hasLd:false,
+  catLabel:"상품별",
+  cats:MN_CATS,
+  items:MN_ITEMS,
+  giftTitle:"MD 특전",
+  cafeGiftTitle:"랜덤 코스터",
+  cartHint:"장바구니 1개 = 영수증 1건이에요. 공지에 구매 수량 제한은 따로 없었어요. 품절 상품은 예약 구매로 바뀔 수 있어서 굿즈마다 예약 체크를 할 수 있어요.",
+  cafeHint:"주간 메뉴와 야간 메뉴를 나눠 담아요. 코스터는 주간·야간이 디자인이 달라서 따로 계산해요. 메뉴 금액은 MD 특전 금액에 포함되지 않아요.",
+  gifts:[
+    {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (16종)",cond:"MD 구매 1만원당 1개 랜덤 · 16만원 이상이면 16종 전종 중복 없이 증정",img:"postcard",rule:{type:"per",amount:10000},unit:"개"},
+    {id:"poster",short:"A4 포스터",name:"일러스트 포스터 A4 (4종)",cond:"MD 구매 5만원당 1개 랜덤 · 20만원 이상이면 4종 전종 중복 없이 증정",img:"poster",rule:{type:"per",amount:50000},unit:"개"},
+    {id:"coasterd",cafe:true,short:"주간 코스터",name:"주간 랜덤 코스터 (8종)",cond:"단품 메뉴 1개당 1종 랜덤 · 빅멕 세트는 2종 · 당일 메뉴 8종 주문 시 전종 중복 없이 증정",img:"coasterd",rule:{type:"parts",parts:[{nos:[32,33,34,35,36,37,38,39]},{nos:[31],mult:2}]},unit:"종"},
+    {id:"coastern",cafe:true,short:"야간 코스터",name:"야간 랜덤 코스터 (8종)",cond:"단품 메뉴 1개당 1종 랜덤 · 떡볶이 세트는 2종 · 당일 메뉴 8종 주문 시 전종 중복 없이 증정",img:"coastern",rule:{type:"parts",parts:[{nos:[52,53,54,55,56,57,58,59]},{nos:[51],mult:2}]},unit:"종"},
+  ],
+  notes:[
+    "장소: 판타지트 (서울 마포구 월드컵로 10길 39). 운영은 월~목·일 11:00~20:20 (총 5타임), 금·토 11:00~22:20이에요.",
+    "금·토 17:00(4타임)부터는 「밤부포차」 야간파티로 운영되고 야간 메뉴가 나와요. 주간과 야간 예약 링크가 다르니 예약 전에 꼭 확인하세요.",
+    "MD 특전은 MD 구매 금액 기준이에요. 카페 메뉴 금액은 포함하지 않고 계산했어요.",
+    "꾸금 포토카드와 꾸금 포카 12팩 패키지는 19금이라 미성년자는 구매할 수 없고, 결제 시 신분증을 확인해요. 신분증을 꼭 챙기세요.",
+    "인형 키링, 수면 안대, 희재의 일방적 커플 잠옷은 예약판매 상품이라 담으면 내역에 ‘예약’으로 표시돼요.",
+    "밤부 포토카드 확정팩 포토카드 뒷면에는 토끼 희재, 고양이 우진, 나폴레옹이 각 1개부터 5개까지 인쇄돼 있어서 실제로 보드게임을 할 수 있어요.",
+    "각 증정품은 소진되면 증정이 끝나요. 이미지는 연출용이라 실제와 다를 수 있어요."
+  ],
+  complete:{
+    tab:"스탬프 · 예약자",
+    title:"스탬프 미션 · 예약자 특전",
+    sub:"미션·예약자·야간 입장 특전",
+    items:[
+      {k:"m1",img:"stampcard",name:"미션 ① 메뉴 1만원 구매",cond:"콜라보 메뉴 1만원 이상 구매"},
+      {k:"m2",img:"stampcard",name:"미션 ② 메뉴 리뷰 (해시태그)",cond:"네이버 영수증 또는 X(트위터), 인스타그램에 메뉴 리뷰 + 필수 해시태그"},
+      {k:"m3",img:"stampcard",name:"미션 ③ X 포토존 리뷰 (해시태그)",cond:"X(트위터)에 포토존 리뷰 + 필수 해시태그"},
+      {k:"r3",img:"sticker",name:"미션 3까지 클리어 · 완칼 스티커 3종 중 랜덤 1종",cond:"미션 ①~③ 완료 시 증정"},
+      {k:"m4",img:"stampcard",name:"미션 ④ 굿즈 2만원 구매",cond:"콜라보 굿즈 2만원 이상 구매"},
+      {k:"m5",img:"stampcard",name:"미션 ⑤ X 굿즈 리뷰 (해시태그)",cond:"X(트위터)에 굿즈 리뷰 + 필수 해시태그"},
+      {k:"m6",img:"stampcard",name:"미션 ⑥ 빅멕 세트 또는 떡볶이 세트 구매",cond:"빅멕 세트 또는 떡볶이 세트 구매"},
+      {k:"r6",img:"stamppc",name:"미션 6까지 클리어 · 포토카드 6종 중 랜덤 2종",cond:"미션 ①~⑥ 완료 시 증정"},
+      {k:"w1",img:"rsv",name:"예약자 포토카드 · 1주차 (12/3~12/13)",cond:"예약자 한정 · F&B 메뉴 구매 영수증 확인 후 증정 · 동반자 수령 불가"},
+      {k:"w2",img:"rsv",name:"예약자 포토카드 · 2주차 (12/14~12/24)",cond:"예약자 한정 · F&B 메뉴 구매 영수증 확인 후 증정 · 동반자 수령 불가"},
+      {k:"w3",img:"rsv",name:"예약자 포토카드 · 3주차 (12/25~1/3)",cond:"예약자 한정 · F&B 메뉴 구매 영수증 확인 후 증정 · 동반자 수령 불가"},
+      {k:"night",img:"welcome",name:"야간 입장 특전 & 웰컴드링크",cond:"금·토 17:00부터 「밤부포차」 야간파티 입장 시 · 웰컴드링크는 밤 막걸리 칵테일"}
+    ],
+    note:"필수 해시태그: #밤은부드러워라 #판타지트 #콜라보카페",
+    notes:[
+      "네이버 영수증 후기를 쓸 때는 ‘알림받기’와 ‘저장’이 필수예요.",
+      "증정품이 소진되면 조기 종료될 수 있어요.",
+      "쿠폰·할인으로 구입하면 적립이 안 돼요. 영수증으로 나중에 적립할 수 없고, 실제 구매 시점에만 적립돼요.",
+      "콜라보카페가 끝나면 증정이 안 돼요. X(트위터) 후기는 당일 게시물만 인정해요.",
+      "1번 미션과 6번 미션은 별개 미션이라 합산되지 않아요.",
+      "예약자 포토카드는 주차별로 디자인이 달라요."
+    ]
+  },
+  guides:MN_GUIDES
 },{
   id:"xm",
   work:"그들만의 1225",
@@ -2278,7 +2393,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"xm"},{ev:"pl"},{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"mn"},{ev:"xm"},{ev:"pl"},{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
