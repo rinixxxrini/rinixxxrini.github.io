@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261120">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261120">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -996,6 +996,29 @@ const PZ_ITEMS = [
   {no:34,tag:"14",cat:"아크릴·키링",name:"성장 앨범 키링",sub:"55×62mm · 20매",price:15000,vars:["도우원","강서안"],limit:1,perDesign:true},
   {no:35,tag:"15",cat:"포토카드·지류",name:"포토팩",sub:"파일, 포스터, 엽서, 포토카드, 네컷포토, 렌티큘러 포토카드",price:17000},
 ];
+const XM_IMGS = {"1": "img/xm_imgs/1-5e43765c.jpg", "2": "img/xm_imgs/2-ab63a1bd.jpg", "3": "img/xm_imgs/3-4fb79299.jpg", "4": "img/xm_imgs/4-fe12a1ae.jpg", "11": "img/xm_imgs/11-b0ef305d.jpg", "12": "img/xm_imgs/12-6024bbea.jpg", "13": "img/xm_imgs/13-f14de5db.jpg", "14": "img/xm_imgs/14-f3532111.jpg", "15": "img/xm_imgs/15-baa554c9.jpg", "16": "img/xm_imgs/16-71e8f59e.jpg", "17": "img/xm_imgs/17-c4b4f15e.jpg", "18": "img/xm_imgs/18-e1fc3b91.jpg", "19": "img/xm_imgs/19-d387f8b2.jpg", "20": "img/xm_imgs/20-66dc8c7e.jpg", "21": "img/xm_imgs/21-8452d4da.jpg"};
+const XM_GIMG = {"pc": "img/xm_gimg/pc-eca24d1a.jpg", "seal": "img/xm_gimg/seal-c45f3556.jpg"};
+const XM_COVER = "img/xm_cover/cover-74661482.jpg";
+const XM_BOARD = "img/xm_guides/menu-f0e64848.jpg";
+const XM_GUIDES = [{"title": "스페셜 메뉴", "img": "img/xm_guides/menu-f0e64848.jpg"}, {"title": "메뉴 특전 · 이용 안내", "img": "img/xm_guides/perk-3c74b1ad.jpg"}, {"title": "테마 MD 1", "img": "img/xm_guides/md1-0d5e309c.jpg"}, {"title": "테마 MD 2", "img": "img/xm_guides/md2-06770894.jpg"}, {"title": "테마 MD 3 · 레봄 ONLY", "img": "img/xm_guides/md3-8ee76192.jpg"}, {"title": "메인 이미지", "img": "img/xm_guides/kv-74661482.jpg"}];
+const XM_CATS = ["카페 메뉴","아크릴","포토카드·지류","키링","레봄 ONLY"];
+const XM_ITEMS = [
+  {no:1,tag:"M1",cat:"카페 메뉴",name:"LEBOM Print Drink",sub:"레봄 프린트 드링크 · ICE ONLY · 작품별 ver. 8종 중 택1 · 카페 라떼/초코 라떼 선택 · 증정: 기프트 포토카드 ver.A 1장",price:6900,vars:["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번"],limit:1,perDesign:true,noElig:true,note:"프린트당 1인 1잔"},
+  {no:2,tag:"M2",cat:"카페 메뉴",name:"LEBOM Signature",sub:"발로나 바닐라 아포가토 · 증정: 기프트 포토카드 ver.A 1장",price:6800,noElig:true,limit:2},
+  {no:3,tag:"M3",cat:"카페 메뉴",name:"X-mas Special",sub:"메리 베리 모히또 · ICE ONLY · 증정: 기프트 포토카드 ver.A 1장",price:7900,noElig:true,limit:2},
+  {no:4,tag:"D",cat:"카페 메뉴",name:"Rudolph Walnut Brownie",sub:"루돌프 월넛 브라우니 · 증정: 크리스마스 씰 미니 카드 (2종 중 랜덤 1장)",price:8900,noElig:true,limit:1,note:"디저트는 1인 1개"},
+  {no:11,cat:"아크릴",name:"아크릴 스탠드",sub:"16종 중 선택 · 약 120×190mm",price:16000,vars:["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번", "9번", "10번", "11번", "12번", "13번", "14번", "15번", "16번"]},
+  {no:12,cat:"아크릴",name:"오너먼트 아크릴 블록",sub:"8종 중 선택 · 약 70×100mm · 아크릴 블록 1개 + 미니 엽서 1장",price:9500,vars:["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번"]},
+  {no:13,cat:"아크릴",name:"스노우볼 아크릴 블록",sub:"8종 중 선택 · 약 70×100mm · 아크릴 블록 1개 + 미니 엽서 1장",price:9500,vars:["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번"]},
+  {no:14,cat:"아크릴",name:"크리스마스 아크릴 블록",sub:"8종 중 선택 · 72×128mm · 아크릴 블록 1개 + 투명 포카 1장",price:30000,vars:["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번"]},
+  {no:15,cat:"아크릴",name:"컬렉션 빅 스탠드",sub:"랜덤 · 8종 중 1종 · 약 60×60mm",price:8500},
+  {no:16,cat:"포토카드·지류",name:"크리스마스 스냅팩",sub:"랜덤 · 8종 중 1종 · 125×150mm",price:5000},
+  {no:17,cat:"포토카드·지류",name:"컬렉션 포토카드",sub:"랜덤 · 16종 중 3종 · 55×85mm",price:5000},
+  {no:18,cat:"키링",name:"스노우볼 미니 쿠션 키링",sub:"랜덤 · 8종 중 1종 · 50×50mm",price:7700},
+  {no:19,cat:"키링",name:"오너먼트 미니 쿠션 키링",sub:"랜덤 · 8종 중 1종 · 50×50mm",price:7700},
+  {no:20,cat:"레봄 ONLY",name:"레봄 필름 인화사진",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번"]},
+  {no:21,cat:"레봄 ONLY",name:"레봄 조각 스티커",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번"]},
+];
 const PL_COVER = "img/pl_cover/cover-810077b0.jpg";
 const PL_IMGS = {"1": "img/pl_imgs/1-740b688d.jpg", "2": "img/pl_imgs/2-ac8dda79.jpg", "3": "img/pl_imgs/3-7f7a1f38.jpg", "4": "img/pl_imgs/4-bd7bf479.jpg", "5": "img/pl_imgs/5-b17ed1e6.jpg", "6": "img/pl_imgs/6-901393cb.jpg", "7": "img/pl_imgs/7-bafe4613.jpg", "8": "img/pl_imgs/8-dfb8818d.jpg", "9": "img/pl_imgs/9-33f6c7bf.jpg", "10": "img/pl_imgs/10-4ef2654a.jpg", "11": "img/pl_imgs/11-82b5e652.jpg", "12": "img/pl_imgs/12-937864ee.jpg", "21": "img/pl_imgs/21-b328cac7.jpg", "22": "img/pl_imgs/22-b4b82106.jpg", "23": "img/pl_imgs/23-25ec5869.jpg", "24": "img/pl_imgs/24-d9dbe72c.jpg", "25": "img/pl_imgs/25-e6e258ed.jpg", "26": "img/pl_imgs/26-fb2bdbe2.jpg", "27": "img/pl_imgs/27-7cbbba8c.jpg", "28": "img/pl_imgs/28-a4e65366.jpg", "29": "img/pl_imgs/29-384d217f.jpg", "30": "img/pl_imgs/30-f665032f.jpg", "31": "img/pl_imgs/31-cd46b1d3.jpg", "32": "img/pl_imgs/32-2fe25643.jpg", "33": "img/pl_imgs/33-7282055d.jpg"};
 const PL_GIMG = {"set1": "img/pl_gimg/set1-31af1fda.jpg", "set2": "img/pl_gimg/set2-21e8bdbf.jpg", "coaster": "img/pl_gimg/coaster-28a7d321.jpg", "set3": "img/pl_gimg/set3-67aaa804.jpg", "card": "img/pl_gimg/card-b2b1f3b3.jpg", "pc": "img/pl_gimg/pc-34c77b94.jpg"};
@@ -1281,6 +1304,41 @@ const EVENTS = [{
     ]
   },
   guides:[PZ_GUIDES[0], ...PZ_GUIDES_ALL]
+},{
+  id:"xm",
+  work:"그들만의 1225",
+  kw:"그들만의 1225 그들만의1225 1225 크리스마스 레봄 카페레봄 lebom 레진 봄툰 성수",
+  title:"그들만의 1225 in LEBOM",
+  cardSub:"카페 레봄 (성수) · 주말 운영",
+  sub:"카페 레봄 · 모두의 겨울, 그들만의 크리스마스",
+  subFull:"그들만의 1225 in LEBOM · 카페 레봄 계산기",
+  dates:"2026.12.5(토) - 2026.12.27(일)",
+  imgs:XM_IMGS, gimg:XM_GIMG,
+  menuBoard:XM_BOARD, menuCat:"카페 메뉴",
+  cover:XM_COVER,
+  hasLd:false,
+  catLabel:"구분",
+  cats:XM_CATS,
+  items:XM_ITEMS,
+  giftTitle:"특전",
+  cartHint:"장바구니 1개 = 결제 1건이에요. 이번 공지엔 MD 금액 특전이 없고, 품목별 1인 구매 수량 제한은 현장 안내를 따라요.",
+  gifts:[
+    {id:"pc",cafe:true,short:"기프트 포카",name:"기프트 포토카드 ver.A (8종 랜덤)",cond:"스페셜 음료 1잔당 1장",img:"pc",rule:{type:"items",nos:[1,2,3]},unit:"장"},
+    {id:"seal",cafe:true,short:"씰 미니 카드",name:"크리스마스 씰 미니 카드 (2종 랜덤)",cond:"디저트 1개당 2종 중 랜덤 1장",img:"seal",rule:{type:"items",nos:[4]},unit:"장"},
+  ],
+  notes:[
+    "2026.12.5(토)부터 12.27(일)까지 카페 레봄에서 열려요. 카페 레봄은 주말 한정 운영이에요. 운영 소식은 트위터 @Cafe_Lebom에서 확인할 수 있어요.",
+    "카페 이용 시 1인 1메뉴 주문이 필요해요. 음료는 1인 최대 2잔, 디저트는 1인 최대 1개까지예요. (재주문 불가) 프린트 드링크는 프린트당 1인 1잔이에요. 음료 2잔 합계 제한은 직접 확인해 주세요.",
+    "메뉴 특전은 주문한 스페셜 메뉴에 맞춰 1메뉴당 1개씩 줘요. 음료 2잔이면 기프트 포토카드 2장, 디저트 1개면 크리스마스 씰 미니 카드 2종 중 랜덤 1장이에요. 메뉴 특전은 주차별 재고가 한정이고 주차별로 재입고돼요.",
+    "식재료 수급 상황에 따라 일부 메뉴가 일시 품절될 수 있어요. 메리 베리 모히또는 논알코올이에요. 브라우니는 개봉 즉시 섭취를 권장하고(냉장 보관 시 2일 이내), 견과류가 들어 있어요.",
+    "음료 구매자에 한해 MD와 도서를 살 수 있어요. MD 구매는 입장 후 음료 주문 순번대로 진동벨로 안내해요.",
+    "결제는 신용카드, 체크카드, 삼성페이, 애플페이만 돼요. 현금과 일부 해외 카드는 안 되고, 무이자 할부는 카드사에 문의해 주세요.",
+    "일부 상품은 앞선 회차에서 조기 품절될 수 있고, 품절되면 재입고되지 않아요. 판매 상품이 매주 바뀔 수 있고, 품목별 1인 구매 수량 제한이 있어요.",
+    "교환·환불은 구매 당일에만 가능하고 영수증과 결제 카드를 가져가야 해요. 단순 변심 환불은 안 되고, 특전은 사은품이라 불량 교환·환불이 안 돼요.",
+    "레봄 ONLY(필름 인화사진, 조각 스티커)를 제외한 MD는 나중에 재이미샵 온라인 스토어와 글로벌 공식 유통사에서 팔아요.",
+    "종류를 고르는 상품은 공지 이미지 순서대로 1번부터 번호를 붙였어요. 행사 안내 이미지에서 디자인을 확인해 주세요."
+  ],
+  guides:XM_GUIDES
 },{id:"pl",work:"플레이어로 살아남는 방법",kw:"플레이어로 살아남는 방법 플레이어로살아남는방법 플살방 플살 플레이어 삼백 샴록 해담이엔티 개굴씨 비온 아넥스 비온아넥스 비온카페 be on annex beon",
   title:"플레이어로 살아남는 방법 × Be On ANNEX",cardSub:"비온 아넥스 (마포구 동교로25길)",sub:"비온 아넥스",
   subFull:"플레이어로 살아남는 방법 × 비온 아넥스 콜라보 카페 계산기",dates:"2026.11.27(금) - 2026.12.27(일)",
@@ -2217,7 +2275,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"pl"},{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"xm"},{ev:"pl"},{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
