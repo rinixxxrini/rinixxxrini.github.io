@@ -1000,10 +1000,10 @@ const PZ_ITEMS = [
   {no:35,tag:"15",cat:"포토카드·지류",name:"포토팩",sub:"파일, 포스터, 엽서, 포토카드, 네컷포토, 렌티큘러 포토카드",price:17000},
 ];
 const XM_IMGS = {"1": "img/xm_imgs/1-5e43765c.jpg", "2": "img/xm_imgs/2-ab63a1bd.jpg", "3": "img/xm_imgs/3-4fb79299.jpg", "4": "img/xm_imgs/4-fe12a1ae.jpg", "11": "img/xm_imgs/11-b0ef305d.jpg", "12": "img/xm_imgs/12-6024bbea.jpg", "13": "img/xm_imgs/13-f14de5db.jpg", "14": "img/xm_imgs/14-f3532111.jpg", "15": "img/xm_imgs/15-baa554c9.jpg", "16": "img/xm_imgs/16-71e8f59e.jpg", "17": "img/xm_imgs/17-c4b4f15e.jpg", "18": "img/xm_imgs/18-e1fc3b91.jpg", "19": "img/xm_imgs/19-d387f8b2.jpg", "20": "img/xm_imgs/20-66dc8c7e.jpg", "21": "img/xm_imgs/21-8452d4da.jpg"};
-const XM_GIMG = {"pc": "img/xm_gimg/pc-eca24d1a.jpg", "seal": "img/xm_gimg/seal-c45f3556.jpg"};
+const XM_GIMG = {"tree": "img/xm_gimg/tree-01a5b54e.jpg", "pcb": "img/xm_gimg/pcb-e52d46eb.jpg", "pc": "img/xm_gimg/pc-eca24d1a.jpg", "seal": "img/xm_gimg/seal-c45f3556.jpg"};
 const XM_COVER = "img/xm_cover/cover-74661482.jpg";
 const XM_BOARD = "img/xm_guides/menu-f0e64848.jpg";
-const XM_GUIDES = [{"title": "스페셜 메뉴", "img": "img/xm_guides/menu-f0e64848.jpg"}, {"title": "메뉴 특전 · 이용 안내", "img": "img/xm_guides/perk-3c74b1ad.jpg"}, {"title": "테마 MD 1", "img": "img/xm_guides/md1-0d5e309c.jpg"}, {"title": "테마 MD 2", "img": "img/xm_guides/md2-06770894.jpg"}, {"title": "테마 MD 3 · 레봄 ONLY", "img": "img/xm_guides/md3-8ee76192.jpg"}, {"title": "메인 이미지", "img": "img/xm_guides/kv-74661482.jpg"}];
+const XM_GUIDES = [{"title": "입장 · 특전 안내", "img": "img/xm_guides/gift-0c60944c.jpg"}, {"title": "스페셜 메뉴", "img": "img/xm_guides/menu-f0e64848.jpg"}, {"title": "메뉴 특전 · 이용 안내", "img": "img/xm_guides/perk-3c74b1ad.jpg"}, {"title": "테마 MD 1", "img": "img/xm_guides/md1-0d5e309c.jpg"}, {"title": "테마 MD 2", "img": "img/xm_guides/md2-06770894.jpg"}, {"title": "테마 MD 3 · 레봄 ONLY", "img": "img/xm_guides/md3-8ee76192.jpg"}, {"title": "메인 이미지", "img": "img/xm_guides/kv-74661482.jpg"}];
 const XM_CATS = ["카페 메뉴","아크릴","포토카드·지류","키링","레봄 ONLY"];
 const XM_ITEMS = [
   {no:1,tag:"M1",cat:"카페 메뉴",name:"LEBOM Print Drink",sub:"레봄 프린트 드링크 · ICE ONLY · 작품별 ver. 8종 중 택1 · 카페 라떼/초코 라떼 선택 · 증정: 기프트 포토카드 ver.A 1장",price:6900,vars:["권태주의보", "뼈와 꽃잎", "어그러진 혼", "힛 미 하드", "1995 청춘 레포트", "낙인의 세계", "논제로섬", "환장의 가이딩"],limit:1,perDesign:true,noElig:true,note:"프린트당 1인 1잔"},
@@ -1019,8 +1019,8 @@ const XM_ITEMS = [
   {no:17,cat:"포토카드·지류",name:"컬렉션 포토카드",sub:"랜덤 · 16종 중 3종 · 55×85mm",price:5000},
   {no:18,cat:"키링",name:"스노우볼 미니 쿠션 키링",sub:"랜덤 · 8종 중 1종 · 50×50mm",price:7700},
   {no:19,cat:"키링",name:"오너먼트 미니 쿠션 키링",sub:"랜덤 · 8종 중 1종 · 50×50mm",price:7700},
-  {no:20,cat:"레봄 ONLY",name:"레봄 필름 인화사진",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["권태주의보", "뼈와 꽃잎", "어그러진 혼", "힛 미 하드", "1995 청춘 레포트", "낙인의 세계", "논제로섬", "환장의 가이딩"]},
-  {no:21,cat:"레봄 ONLY",name:"레봄 조각 스티커",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["권태주의보", "뼈와 꽃잎", "어그러진 혼", "힛 미 하드", "1995 청춘 레포트", "낙인의 세계", "논제로섬", "환장의 가이딩"]},
+  {no:20,cat:"레봄 ONLY",name:"레봄 필름 인화사진",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["권태주의보", "뼈와 꽃잎", "어그러진 혼", "힛 미 하드", "1995 청춘 레포트", "낙인의 세계", "논제로섬", "환장의 가이딩"],noElig:true,note:"레봄 ONLY · 테마 MD 금액 특전 계산에서 제외했어요"},
+  {no:21,cat:"레봄 ONLY",name:"레봄 조각 스티커",sub:"8종 중 선택 · 레봄 ONLY",price:2000,vars:["권태주의보", "뼈와 꽃잎", "어그러진 혼", "힛 미 하드", "1995 청춘 레포트", "낙인의 세계", "논제로섬", "환장의 가이딩"],noElig:true,note:"레봄 ONLY · 테마 MD 금액 특전 계산에서 제외했어요"},
 ];
 const MN_IMGS = {"1": "img/mn_imgs/1-3345fe87.jpg", "2": "img/mn_imgs/2-be3e555f.jpg", "3": "img/mn_imgs/3-55d494fd.jpg", "4": "img/mn_imgs/4-1405b80e.jpg", "5": "img/mn_imgs/5-426ad69b.jpg", "6": "img/mn_imgs/6-8204978d.jpg", "7": "img/mn_imgs/7-ae25e950.jpg", "8": "img/mn_imgs/8-22bbfbc3.jpg", "9": "img/mn_imgs/9-f9aab1a9.jpg", "10": "img/mn_imgs/10-997f7be1.jpg", "11": "img/mn_imgs/11-b6799a66.jpg", "12": "img/mn_imgs/12-4a25b5a1.jpg", "13": "img/mn_imgs/13-dc8023e6.jpg", "14": "img/mn_imgs/14-009a2d38.jpg", "15": "img/mn_imgs/15-5a6ab786.jpg", "16": "img/mn_imgs/16-16ce3f10.jpg", "17": "img/mn_imgs/17-b1b3e3a7.jpg", "18": "img/mn_imgs/18-6d51fbcb.jpg", "19": "img/mn_imgs/19-d841e506.jpg", "31": "img/mn_imgs/31-9d30dcb4.jpg", "32": "img/mn_imgs/32-1cb9f551.jpg", "33": "img/mn_imgs/33-789dee9b.jpg", "34": "img/mn_imgs/34-5e431639.jpg", "35": "img/mn_imgs/35-a63f6ca5.jpg", "36": "img/mn_imgs/36-3d5f6f68.jpg", "37": "img/mn_imgs/37-a71d2b34.jpg", "38": "img/mn_imgs/38-d1e569e9.jpg", "39": "img/mn_imgs/39-363d4ea6.jpg", "51": "img/mn_imgs/51-7a5c6ceb.jpg", "52": "img/mn_imgs/52-15f30a92.jpg", "53": "img/mn_imgs/53-23fc950e.jpg", "54": "img/mn_imgs/54-f1462a40.jpg", "55": "img/mn_imgs/55-2e61194a.jpg", "56": "img/mn_imgs/56-a36f2f58.jpg", "57": "img/mn_imgs/57-30d50a8a.jpg", "58": "img/mn_imgs/58-1360128a.jpg", "59": "img/mn_imgs/59-cd036a5a.jpg"};
 const MN_GIMG = {"postcard": "img/mn_gimg/postcard-dc7e3b83.jpg", "poster": "img/mn_gimg/poster-506a2cef.jpg", "coasterd": "img/mn_gimg/coasterd-dac6eceb.jpg", "coastern": "img/mn_gimg/coastern-4e732940.jpg", "welcome": "img/mn_gimg/welcome-4e3d5019.jpg", "stampcard": "img/mn_gimg/stampcard-b3c7df9e.jpg", "stamppc": "img/mn_gimg/stamppc-f1854940.jpg", "sticker": "img/mn_gimg/sticker-2b2df4d3.jpg", "rsv": "img/mn_gimg/rsv-f76c283e.jpg"};
@@ -1439,14 +1439,17 @@ const EVENTS = [{
   cats:XM_CATS,
   items:XM_ITEMS,
   giftTitle:"특전",
-  cartHint:"장바구니 1개 = 결제 1건이에요. 이번 공지엔 MD 금액 특전이 없고, 품목별 1인 구매 수량 제한은 현장 안내를 따라요.",
+  cartHint:"장바구니 1개 = 예약 회차 1번이에요. 테마 MD 기프트 포토카드는 예약 회차별 최대 1회라 모든 장바구니를 합쳐 계산해요. 품목별 1인 구매 수량 제한은 현장 안내를 따라요.",
+  multiNote:"테마 MD 기프트 포토카드 ver.B는 예약 회차별 최대 1회(최대 4장)라 전체 장바구니를 합쳐서 계산했어요.",
   gifts:[
-    {id:"pc",cafe:true,short:"기프트 포카",name:"기프트 포토카드 ver.A (8종 랜덤)",cond:"스페셜 음료 1잔당 1장",img:"pc",rule:{type:"items",nos:[1,2,3]},unit:"장"},
+    {id:"mdpc",short:"기프트 포카 ver.B",name:"기프트 포토카드 ver.B (랜덤)",cond:"그들만의 1225 테마 MD 5만·10만·15만·20만원 이상 구매 시 1장씩 (최대 4장, 예약 회차별 1회) · 레봄 ONLY 제외",img:"pcb",rule:{type:"per",amount:50000,cap:4},unit:"장",combine:true},
+    {id:"pc",cafe:true,short:"기프트 포카 ver.A",name:"기프트 포토카드 ver.A (8종 랜덤)",cond:"스페셜 음료 1잔당 1장",img:"pc",rule:{type:"items",nos:[1,2,3]},unit:"장"},
     {id:"seal",cafe:true,short:"씰 미니 카드",name:"크리스마스 씰 미니 카드 (2종 랜덤)",cond:"디저트 1개당 2종 중 랜덤 1장",img:"seal",rule:{type:"items",nos:[4]},unit:"장"},
   ],
   notes:[
     "2026.12.5(토)부터 12.27(일)까지 카페 레봄에서 열려요. 카페 레봄은 주말 한정 운영이에요. 운영 소식은 트위터 @Cafe_Lebom에서 확인할 수 있어요.",
     "카페 이용 시 1인 1메뉴 주문이 필요해요. 음료는 1인 최대 2잔, 디저트는 1인 최대 1개까지예요. (재주문 불가) 프린트 드링크는 프린트당 1인 1잔이에요. 음료 2잔 합계 제한은 직접 확인해 주세요.",
+    "테마 MD 특전: 그들만의 1225 테마 MD를 5만·10만·15만·20만원 이상 사면 기프트 포토카드 ver.B를 1장씩 줘요. (20만원 이상이면 최대 4장) 레봄 ONLY는 테마 MD가 아닌 것으로 보고 금액에서 뺐어요. 특전은 예약 회차별 최대 1회예요. (메뉴 특전 별도)",
     "메뉴 특전은 주문한 스페셜 메뉴에 맞춰 1메뉴당 1개씩 줘요. 음료 2잔이면 기프트 포토카드 2장, 디저트 1개면 크리스마스 씰 미니 카드 2종 중 랜덤 1장이에요. 메뉴 특전은 주차별 재고가 한정이고 주차별로 재입고돼요.",
     "식재료 수급 상황에 따라 일부 메뉴가 일시 품절될 수 있어요. 메리 베리 모히또는 논알코올이에요. 브라우니는 개봉 즉시 섭취를 권장하고(냉장 보관 시 2일 이내), 견과류가 들어 있어요.",
     "음료 구매자에 한해 MD와 도서를 살 수 있어요. MD 구매는 입장 후 음료 주문 순번대로 진동벨로 안내해요.",
@@ -1456,6 +1459,15 @@ const EVENTS = [{
     "레봄 ONLY(필름 인화사진, 조각 스티커)를 제외한 MD는 나중에 재이미샵 온라인 스토어와 글로벌 공식 유통사에서 팔아요.",
     "라인업은 권태주의보, 뼈와 꽃잎, 어그러진 혼, 힛 미 하드, 1995 청춘 레포트, 낙인의 세계, 논제로섬, 환장의 가이딩 8작품이에요. 종류를 고르는 상품은 작품 이름으로 골라 담을 수 있고, 아크릴 스탠드는 작품마다 2종이라 1·2로 나눴어요."
   ],
+  complete:{
+    title:"입장 · 스탬프 특전",
+    sub:"받았으면 체크",
+    items:[
+      {k:"entry",img:"tree",name:"입장 특전 · 트리 오너먼트",cond:"입장 시 증정"},
+      {k:"stamp",img:"pcb",name:"현장 스탬프 쿠폰 3개 완성 · 기프트 포토카드 ver.B 1장 (랜덤)",cond:"현장 스탬프 쿠폰 3개를 모으면 증정 · 예약 회차별 최대 1회"}
+    ],
+    note:"특전은 예약 회차별 최대 1회 증정이에요. (메뉴 특전 별도) 재고가 소진되면 별도 안내 없이 끝나고, 운영 변동은 LEBOM 트위터 계정에서 안내해요."
+  },
   guides:XM_GUIDES
 },{id:"pl",work:"플레이어로 살아남는 방법",kw:"플레이어로 살아남는 방법 플레이어로살아남는방법 플살방 플살 플레이어 삼백 샴록 해담이엔티 개굴씨 비온 아넥스 비온아넥스 비온카페 be on annex beon",
   title:"플레이어로 살아남는 방법 × Be On ANNEX",cardSub:"비온 아넥스 (마포구 동교로25길)",sub:"비온 아넥스",
