@@ -11,14 +11,14 @@
 <meta property="og:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta property="og:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기. 굿즈를 담으면 특전 개수와 합계를 바로 계산해요.">
 <meta property="og:url" content="https://rinixxxrini.github.io/">
-<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126c">
+<meta property="og:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261127">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GOODS LIST · BL 콜라보 팝업 & 카페 리스트">
 <meta name="twitter:description" content="BL 콜라보 팝업스토어·카페 굿즈 리스트와 구매 특전 계산기.">
-<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261126c">
+<meta name="twitter:image" content="https://rinixxxrini.github.io/img/og.jpg?v=20261127">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
@@ -104,9 +104,9 @@ header p{margin:6px 0 0;color:var(--muted);font-size:14px}
 .vars{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:12px;padding-left:36px}
 .var{background:var(--chip);padding:6px 6px 6px 10px;border-radius:3px}
 .var .row{display:flex;align-items:center;justify-content:space-between;gap:6px}
-.var .vl{font-size:13px;font-weight:600;color:var(--muted)}
+.var .vl{font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap}
 .var.long .row{flex-wrap:wrap;row-gap:4px}
-.var.long .vl{flex-basis:100%;word-break:keep-all}
+.var.long .vl{flex-basis:100%;word-break:keep-all;white-space:normal}
 .var.long .step{margin-left:auto}
 .var.has .vl{color:var(--ink)}
 .var .meta{font-size:11.5px;color:var(--muted);margin-top:3px;min-height:16px}
@@ -1068,6 +1068,28 @@ const MN_ITEMS = [
   {no:58,tag:"N8",cat:"야간 메뉴",name:"콘치즈 크래커",sub:"알콘달콘, 바삭쫀득 우리 사이",price:10000,noElig:true},
   {no:59,tag:"N9",cat:"야간 메뉴",name:"희재·우진 쿠키 (야간)",price:3000,vars:["희재","우진"],noElig:true},
 ];
+const PB_IMGS = {"1": "img/pb_imgs/1-7b54fe61.jpg", "2": "img/pb_imgs/2-f2836d2e.jpg", "3": "img/pb_imgs/3-49f88f80.jpg", "4": "img/pb_imgs/4-bd6c179f.jpg", "5": "img/pb_imgs/5-8f7945ca.jpg", "6": "img/pb_imgs/6-facb87b8.jpg", "7": "img/pb_imgs/7-b70e7451.jpg", "11": "img/pb_imgs/11-b4e78e17.jpg", "12": "img/pb_imgs/12-982901fa.jpg", "13": "img/pb_imgs/13-982901fa.jpg", "14": "img/pb_imgs/14-9bb34fcf.jpg", "15": "img/pb_imgs/15-dbbcec3e.jpg", "16": "img/pb_imgs/16-e7ee8d02.jpg", "17": "img/pb_imgs/17-9acc105d.jpg"};
+const PB_GIMG = {"coaster": "img/pb_gimg/coaster-fb5589be.jpg", "postcard": "img/pb_gimg/postcard-e8bf478b.jpg", "poster": "img/pb_gimg/poster-9765c896.jpg", "mini": "img/pb_gimg/mini-09d0ab39.jpg"};
+const PB_COVER = "img/pb_cover/cover-5b0f9a20.jpg";
+const PB_BOARD = "img/pb_guides/menu-5d85f98c.jpg";
+const PB_GUIDES = [{"title": "메뉴", "img": "img/pb_guides/menu-5d85f98c.jpg"}, {"title": "상품 안내", "img": "img/pb_guides/md-95d5a6dd.jpg"}, {"title": "증정품 안내", "img": "img/pb_guides/gift-e279c636.jpg"}, {"title": "포토카드 증정 이벤트", "img": "img/pb_guides/event-03472483.jpg"}, {"title": "이벤트 정보 · 예약 안내", "img": "img/pb_guides/info-277cb616.jpg"}, {"title": "메인 이미지", "img": "img/pb_guides/kv-cb35298c.jpg"}];
+const PB_CATS = ["카페 메뉴","상품"];
+const PB_ITEMS = [
+  {no:1,tag:"M1",cat:"카페 메뉴",name:"<두식&주하> 피어&엘더플라워 에이드",sub:"주님 앞에 저의 죄를 고백합니다.",price:7000,noElig:true},
+  {no:2,tag:"M2",cat:"카페 메뉴",name:"<승현&유타> 오디 주스",sub:"그대는 신의 사자인가, 나를 타락으로 이끌 유혹자인가.",price:7000,noElig:true},
+  {no:3,tag:"M3",cat:"카페 메뉴",name:"<대휘&대광> 블랙 라떼",sub:"나의 형제여, 나의 구원이여, 나의 영원한 죄여.",price:7000,noElig:true},
+  {no:4,tag:"M4",cat:"카페 메뉴",name:"<두식&주하> 치아바타 바질치즈 샌드위치",sub:"당신을 위해 기도하겠습니다.",price:9500,noElig:true},
+  {no:5,tag:"M5",cat:"카페 메뉴",name:"<승현&유타> 무화과 파운드",sub:"고개를 들어, 나를 바라보아라.",price:8500,noElig:true},
+  {no:6,tag:"M6",cat:"카페 메뉴",name:"<대휘&대광> 베리 초코 케이크",sub:"그대가 짊어질 죄가 되어주리라.",price:9000,noElig:true},
+  {no:7,tag:"M7",cat:"카페 메뉴",name:"캐릭터 쿠키 (2종)",price:4000,vars:["버터","초코"],noElig:true},
+  {no:11,tag:"01",cat:"상품",name:"디오라마 아크릴 스탠드 (3종)",price:32000,vars:["왼쪽","가운데","오른쪽"]},
+  {no:12,tag:"02-1",cat:"상품",name:"A5 일러스트 색지 세트 (3종)",price:24000},
+  {no:13,tag:"02-2",cat:"상품",name:"A5 일러스트 색지 낱개 (1종 랜덤)",price:8000},
+  {no:14,tag:"03",cat:"상품",name:"무드 포스터 세트",sub:"PET 포스터 1종 + 포토카드 1종",price:11000},
+  {no:15,tag:"04",cat:"상품",name:"Black Votive Candle 세트",sub:"블랙 캔들 1종 + 포토카드 3종 + 향 노트 포토카드 1종",price:35000},
+  {no:16,tag:"05-1",cat:"상품",name:"컨셉 포토 세트",sub:"아크릴 포토카드 키링 6종 + 엽서 6종",price:96000},
+  {no:17,tag:"05-2",cat:"상품",name:"랜덤 컨셉 포토",sub:"아크릴 포토카드 키링 1종 + 엽서 1종 (랜덤)",price:16000,limit:10,note:"1인 10개까지"},
+];
 const PL_COVER = "img/pl_cover/cover-810077b0.jpg";
 const PL_IMGS = {"1": "img/pl_imgs/1-740b688d.jpg", "2": "img/pl_imgs/2-ac8dda79.jpg", "3": "img/pl_imgs/3-7f7a1f38.jpg", "4": "img/pl_imgs/4-bd7bf479.jpg", "5": "img/pl_imgs/5-b17ed1e6.jpg", "6": "img/pl_imgs/6-901393cb.jpg", "7": "img/pl_imgs/7-bafe4613.jpg", "8": "img/pl_imgs/8-dfb8818d.jpg", "9": "img/pl_imgs/9-33f6c7bf.jpg", "10": "img/pl_imgs/10-4ef2654a.jpg", "11": "img/pl_imgs/11-82b5e652.jpg", "12": "img/pl_imgs/12-937864ee.jpg", "21": "img/pl_imgs/21-b328cac7.jpg", "22": "img/pl_imgs/22-b4b82106.jpg", "23": "img/pl_imgs/23-25ec5869.jpg", "24": "img/pl_imgs/24-d9dbe72c.jpg", "25": "img/pl_imgs/25-e6e258ed.jpg", "26": "img/pl_imgs/26-fb2bdbe2.jpg", "27": "img/pl_imgs/27-7cbbba8c.jpg", "28": "img/pl_imgs/28-a4e65366.jpg", "29": "img/pl_imgs/29-384d217f.jpg", "30": "img/pl_imgs/30-f665032f.jpg", "31": "img/pl_imgs/31-cd46b1d3.jpg", "32": "img/pl_imgs/32-2fe25643.jpg", "33": "img/pl_imgs/33-7282055d.jpg"};
 const PL_GIMG = {"set1": "img/pl_gimg/set1-31af1fda.jpg", "set2": "img/pl_gimg/set2-21e8bdbf.jpg", "coaster": "img/pl_gimg/coaster-28a7d321.jpg", "set3": "img/pl_gimg/set3-67aaa804.jpg", "card": "img/pl_gimg/card-b2b1f3b3.jpg", "pc": "img/pl_gimg/pc-34c77b94.jpg"};
@@ -1353,6 +1375,64 @@ const EVENTS = [{
     ]
   },
   guides:[PZ_GUIDES[0], ...PZ_GUIDES_ALL]
+},{
+  id:"pb",
+  work:"조개소년",
+  kw:"조개소년 발화 조개소년AU 조개소년 AU pearl boy ignite the dawn 깅깅 kingin 두식 주하 승현 유타 대휘 대광 모펀 mofun 서교 서교점 홍대",
+  rsv:true,
+  title:"조개소년 & 발화 × MOFUN",
+  cardSub:"모펀 콜라보카페 서교점",
+  sub:"모펀 콜라보카페 서교점",
+  subFull:"조개소년 & 발화 모펀 콜라보 카페(서교점) 계산기",
+  dates:"2026.12.4(금) - 2026.12.27(일)",
+  imgs:PB_IMGS, gimg:PB_GIMG,
+  menuBoard:PB_BOARD, menuCat:"카페 메뉴",
+  cover:PB_COVER,
+  hasLd:false,
+  combineCarts:true,
+  catLabel:"구분",
+  cats:PB_CATS,
+  items:PB_ITEMS,
+  giftTitle:"증정품",
+  cartHint:"장바구니 1개 = 영수증 1건이에요. 증정품은 당일 영수증에 한해 합산돼서 모든 장바구니를 합쳐 계산해요. 랜덤 컨셉 포토는 1인 10개까지 살 수 있어요.",
+  gifts:[
+    {id:"coaster",cafe:true,short:"코스터",name:"코스터 (6종)",cond:"콜라보 메뉴 1개당 1매 랜덤 · 당일 메뉴 6개 이상이면 6종 전부 증정",img:"coaster",rule:{type:"items",nos:[1,2,3,4,5,6,7]},unit:"매"},
+    {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (16종)",cond:"콜라보 상품 1만원 당 1매 랜덤 · 당일 16만원 이상이면 16종 전부 증정",img:"postcard",rule:{type:"per",amount:10000,cap:16},unit:"매"},
+    {id:"poster",short:"A4 포스터",name:"A4 포스터 (3종)",cond:"콜라보 상품 5만원 당 1매 랜덤 · 당일 15만원 이상이면 3종 전부 증정",img:"poster",rule:{type:"per",amount:50000,cap:3},unit:"매"},
+  ],
+  notes:[
+    "12/4(금)~12/6(일)은 사전 예약한 사람만 카페 이용과 상품 구매가 돼요.",
+    "12/7(월)부터는 좌석 이용은 사전 예약이 필요하고, 예약 없이 가면 식음료 테이크아웃과 상품 구매만 돼요.",
+    "예약은 11/29(일) 오후 8시 네이버 예약으로 열려요. 예약금 3,000원(카페 이용 시 환불) · 1회 최대 4인 · 당일 예약·취소 불가.",
+    "회차: 1회 11:00 · 2회 13:00 · 3회 15:00 · 4회 17:00 · 5회 19:00 (각 90분). 주문은 회차 종료 30분 전에 마감돼요.",
+    "결제와 주문은 예약자가 먼저예요. 비예약자는 회차 시작 30분 뒤부터 결제·주문할 수 있어요.",
+    "메뉴 최종 주문은 20시이고 이후엔 상품 결제만 돼요. 매장 마감 20시 30분.",
+    "증정품은 당일 영수증에 한해 합산해서 줘요. 엽서·포스터는 ‘콜라보 상품’ 금액 기준이라 카페 메뉴 금액은 포함하지 않고 계산했어요. (메뉴는 코스터만 증정)",
+    "증정품은 콜라보 기간 내 소진될 수 있어요. 오프라인과 온라인 구매 금액은 합산되지 않아요.",
+    "디오라마 아크릴 스탠드는 커플 구분이 확인되지 않아 이미지 순서(왼쪽·가운데·오른쪽)로 표시했어요.",
+    "카페 이용 시 1인 1메뉴 이상 주문이 원칙이고, 외부 음식 반입은 제한돼요. 식음료와 함께 나가는 허브와 장식품은 교환·환불 대상이 아니에요.",
+    "장소: 모펀 서교점 4층 (서울 마포구 홍익로2길 7, 서교동 345-8) · 홍대입구역 9번 출구. 변동 사항은 @mofun_collabo2 에서 안내해요.",
+    "공정상 생길 수 있는 흔적은 정상 범위라 교환이 어려워요. 상품 이미지는 시안이라 실제와 조금 다를 수 있어요."
+  ],
+  complete:{
+    title:"포토카드 증정 이벤트 (12/4~12/27)",
+    sub:"인증은 1인 1일 1회 최대 3장 · 체크는 자정이 지나면 풀려요",
+    items:[
+      {k:"e1",daily:true,img:"mini",name:"① SNS 팔로우 + 리트윗 · 미니 포토카드 1장 (랜덤)",cond:"모펀 콜라보카페 서교점 계정(@mofun_collabo2) 팔로우 & <조개소년 AU> 안내문 리트윗"},
+      {k:"e2",daily:true,img:"mini",name:"② 메뉴 주문 인증 · 미니 포토카드 1장 (랜덤)",cond:"콜라보 메뉴 주문 후 SNS에 필수 해시태그와 함께 사진 업로드 → 메뉴 구매 영수증을 가지고 모펀 스태프에게 인증"},
+      {k:"e3",daily:true,img:"mini",name:"③ 상품 구매 인증 · 미니 포토카드 1장 (랜덤)",cond:"콜라보 상품 구매 후 SNS에 필수 해시태그와 함께 사진 업로드 → 상품 구매 영수증을 가지고 모펀 스태프에게 인증"}
+    ],
+    collect:{n:9,title:"미니 포토카드 도감"},
+    note:"필수 해시태그: #조개소년 #발화 #깅깅 #모펀 #콜라보카페 · 미니 포토카드 9종 중 랜덤",
+    notes:[
+      "이벤트 기간 내 콜라보 상품 또는 메뉴 결제 영수증을 가지고 가면 인증할 수 있어요.",
+      "인증하면 결제 영수증에 ‘당일 인증 확인 도장’을 찍어줘요. 실물 영수증을 꼭 가져가야 해요.",
+      "콜라보 기간 동안 같은 영수증으로 재인증할 수 있어요. 인증은 1인당 1일 1회, 최대 3장까지예요.",
+      "인증용 사진에는 도용 방지를 위해 날짜와 아이디·닉네임 워터마크를 넣기를 권장해요.",
+      "증정품은 소진되면 증정이 끝나요. 공정상 생긴 흔적은 정상 범위라 교환이 어려워요."
+    ]
+  },
+  guides:PB_GUIDES
 },{
   id:"mn",
   work:"밤은 부드러워라",
@@ -1925,8 +2005,8 @@ const EVENTS = [{
   cartHint:"장바구니 1개 = 영수증 1건이에요. 증정품은 당일 영수증에 한해 합산돼서 모든 장바구니를 합쳐 계산해요. 나의 사한 세트만 1인 2세트 제한이 있어요.",
   gifts:[
     {id:"coaster",cafe:true,short:"코스터",name:"코스터 (8종)",cond:"콜라보 메뉴 1개당 1매 랜덤 (어린이 공룡 정식은 2매) · 당일 메뉴 8개 이상이면 8종 전부 증정",img:"coaster",rule:{type:"parts",parts:[{nos:[1,2,3,5,6,7]},{nos:[4],mult:2}]},unit:"매"},
-    {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (16종)",cond:"콜라보 상품 1만원 당 1매 랜덤 · 당일 16만원 이상이면 16종 전부 증정",img:"postcard",rule:{type:"per",amount:10000},unit:"매"},
-    {id:"poster",short:"A4 포스터",name:"A4 포스터 (3종)",cond:"콜라보 상품 5만원 당 1매 랜덤 · 당일 15만원 이상이면 3종 전부 증정",img:"poster",rule:{type:"per",amount:50000},unit:"매"},
+    {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (16종)",cond:"콜라보 상품 1만원 당 1매 랜덤 · 당일 16만원 이상이면 16종 전부 증정",img:"postcard",rule:{type:"per",amount:10000,cap:16},unit:"매"},
+    {id:"poster",short:"A4 포스터",name:"A4 포스터 (3종)",cond:"콜라보 상품 5만원 당 1매 랜덤 · 당일 15만원 이상이면 3종 전부 증정",img:"poster",rule:{type:"per",amount:50000,cap:3},unit:"매"},
   ],
   notes:[
     "증정품은 당일 영수증에 한해 합산해서 줘요.",
@@ -1981,7 +2061,7 @@ const EVENTS = [{
   gifts:[
     {id:"coaster",cafe:true,short:"코스터",name:"코스터 (8종)",cond:"콜라보 메뉴 1개당 1매 랜덤 · 당일 메뉴 8개 이상이면 8종 전부 증정",img:"coaster",rule:{type:"items",nos:[1,2,3,4,5,6,7]},unit:"매"},
     {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (20종)",cond:"콜라보 상품 1만원 당 1매 랜덤 · 당일 20만원 이상이면 20종 전부 증정",img:"postcard",rule:{type:"per",amount:10000},unit:"매"},
-    {id:"poster",short:"A4 포스터",name:"A4 포스터 (3종)",cond:"콜라보 상품 5만원 당 1매 랜덤 · 당일 15만원 이상이면 3종 전부 증정",img:"poster",rule:{type:"per",amount:50000},unit:"매"},
+    {id:"poster",short:"A4 포스터",name:"A4 포스터 (3종)",cond:"콜라보 상품 5만원 당 1매 랜덤 · 당일 15만원 이상이면 3종 전부 증정",img:"poster",rule:{type:"per",amount:50000,cap:3},unit:"매"},
   ],
   notes:[
     "증정품은 당일 영수증에 한해 합산해서 줘요.",
@@ -2217,8 +2297,8 @@ const EVENTS = [{
   cartHint:"장바구니 1개 = 영수증 1건이에요. 증정품은 당일 영수증에 한해 합산돼서 모든 장바구니를 합쳐 계산해요. 공지에는 구매 수량 제한이 따로 없었어요.",
   gifts:[
     {id:"coaster",cafe:true,short:"코스터",name:"코스터 (8종)",cond:"콜라보 메뉴 1개당 1매 랜덤 · 당일 메뉴 8개 이상이면 8종 전부 증정",img:"coaster",rule:{type:"items",nos:[1,2,3,4,5,6,7]},unit:"매"},
-    {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (16종)",cond:"콜라보 상품 1만원 당 1매 랜덤 · 당일 16만원 이상이면 16종 전부 증정",img:"postcard",rule:{type:"per",amount:10000},unit:"매"},
-    {id:"poster",short:"A4 포스터",name:"A4 포스터 (3종)",cond:"콜라보 상품 5만원 당 1매 랜덤 · 당일 15만원 이상이면 3종 전부 증정",img:"poster",rule:{type:"per",amount:50000},unit:"매"},
+    {id:"postcard",short:"일러스트 엽서",name:"일러스트 엽서 (16종)",cond:"콜라보 상품 1만원 당 1매 랜덤 · 당일 16만원 이상이면 16종 전부 증정",img:"postcard",rule:{type:"per",amount:10000,cap:16},unit:"매"},
+    {id:"poster",short:"A4 포스터",name:"A4 포스터 (3종)",cond:"콜라보 상품 5만원 당 1매 랜덤 · 당일 15만원 이상이면 3종 전부 증정",img:"poster",rule:{type:"per",amount:50000,cap:3},unit:"매"},
   ],
   notes:[
     "증정품은 당일 영수증에 한해 합산해서 증정돼요.",
@@ -2405,7 +2485,7 @@ const EVENTS = [{
 const GROUPS = {
   kdl:{work:"키스 미 이프 유 캔\n디자이어 미 이프 유 캔",kw:"키스 미 이프 유 캔 디자이어 미 이프 유 캔 키이프 디이프 kiss me if you can desire me if you can 키스 디자이어 랜드 굿즈모먼트 goodsmoment",title:"Kiss × Desire Land",sub:"굿즈모먼트 2F · 4F",dates:"2026.10.8(목) - 2026.11.1(일)",cover:KD_COVER,parts:["kdl-pop","kdl-cafe"],entry:"kdl-pop"}
 };
-const HOME = [{ev:"mn"},{ev:"xm"},{ev:"pl"},{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
+const HOME = [{ev:"pb"},{ev:"mn"},{ev:"xm"},{ev:"pl"},{ev:"dc"},{ev:"tm"},{ev:"wf"},{ev:"pz"},{ev:"ss"},{ev:"gs"},{ev:"af"},{ev:"jp"},{ev:"sp"},{ev:"usl"},{ev:"ws"},{ev:"jinx"},{group:"kdl"},{ev:"lap"},{ev:"sg"},{ev:"mtg"},{ev:"bv"},{ev:"sh"}];
 
 /* 날짜는 KST(한국 시간) 기준으로 판단해요 */
 const kstToday = () => { const d = new Date(Date.now() + 9*3600e3); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()); };
@@ -2857,7 +2937,7 @@ function varBox(it,v,cur,menuLabel){
     meta = others.map(x=>`${esc(x.n)} ${x.q}`).join(", ");
   }
   const box = document.createElement("div");
-  box.className = "var" + (!menuLabel && v && String(v).length>5 ? " long":"") + (q?" has":"") + (it.limit && atMax ? " max":"");
+  box.className = "var" + (!menuLabel && v && (it.vars||[]).some(x=>String(x).length>2) ? " long":"") + (q?" has":"") + (it.limit && atMax ? " max":"");
   box.innerHTML = (menuLabel ? `<div class="mlabel">${menuLabel}</div>` : "") +
     `<div class="row">${menuLabel ? "" : `<span class="vl">${v?`[${esc(v)}]`:"수량"}</span>`}
     <span class="step">
